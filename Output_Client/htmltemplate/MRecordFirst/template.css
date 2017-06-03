@@ -1,0 +1,16 @@
+body 
+{
+	/*TEXT-ALIGN: center;*/
+	background:#f8f8f8;
+}
+.container {
+  margin-left: auto;
+  margin-right : auto;
+  /*text-align: center;*/
+  background-color:White;
+  width:1086px;height:756px;
+  border:0px solid #2a6496;
+  padding-right: 0px;
+ padding-left : 0px;
+  
+}

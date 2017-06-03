@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <hostname value="开发调试中间件">
+  </hostname>
+  <cdkey value="QLdaz69CwftkioDWJ5acoxiPsPOQYyDdP5fe1ZrCRjFrqdiMU2lEOODrVHFGItqE">
+  </cdkey>
+  <debug value="1">
+  </debug>
+  <wcfservice value="1">
+  </wcfservice>
+  <router value="1">
+  </router>
+  <filetransfer value="1">
+  </filetransfer>
+  <webapi value="1">
+  </webapi>
+  <timingtask value="1">
+  </timingtask>
+  <heartbeat value="1">
+  </heartbeat>
+  <heartbeattime value="1">
+  </heartbeattime>
+  <message value="0">
+  </message>
+  <messagetime value="1">
+  </messagetime>
+  <compress value="0">
+  </compress>
+  <encryption value="0">
+  </encryption>
+  <token value="0">
+  </token>
+  <serializetype value="0">
+  </serializetype>
+  <overtime value="1">
+  </overtime>
+  <overtimetime value="1">
+  </overtimetime>
+  <mongodb value="0">
+  </mongodb>
+  <mongodb_binpath value="C:\MongoDB\Server\3.2\bin">
+  </mongodb_binpath>
+  <mongodb_conn value="mongodb://localhost:27017">
+  </mongodb_conn>
+  <nginx value="0">
+  </nginx>
+</root>

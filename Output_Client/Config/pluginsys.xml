@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebModulePlugin>
+  </WebModulePlugin>
+  <WinformModulePlugin EntryPlugin="MainFrame.UI" EntryController="wcfclientLoginController">
+    <Plugin name="MainFrame.UI" path="ModulePlugin/WcfMainUIFrame/plugin.xml" title="通用权限管理" isdevelopment="1" />
+    <Plugin name="Books.UI" path="ModulePlugin/Books_Wcf/plugin.xml" title="示列Demo" isdevelopment="1" />
+    <Plugin name="BaseProject.UI" path="ModulePlugin/BaseProject/plugin.xml" title="基础项目客户端插件" isdevelopment="1" />
+    <!--<Plugin name="DrugProject.UI" path="ModulePlugin/DrugProject/plugin.xml" title="药品物资项目客户端插件" isdevelopment="1" />
+    <Plugin name="IPProject.UI" path="ModulePlugin/IPProject/plugin.xml" title="住院项目客户端插件" isdevelopment="1" />
+    <Plugin name="OPProject.UI" path="ModulePlugin/OPProject/plugin.xml" title="门诊项目客户端插件" isdevelopment="1" />
+    <Plugin name="MIProject.UI" path="ModulePlugin/MIProject/plugin.xml" title="医保接口项目客户端插件" isdevelopment="1" />
+
+    <Plugin name="EMRBaseProject.UI" path="ModulePlugin/EMRBaseProject/plugin.xml" title="电子病历基础数据维护界面程序" isdevelopment="1" />
+    <Plugin name="EMRDocProject.UI" path="ModulePlugin/EMRDocProject/plugin.xml" title="电子病历医生工作站界面程序" isdevelopment="1" />-->
+  </WinformModulePlugin>
+  <WcfModulePlugin>
+    
+  </WcfModulePlugin>
+</pluginsys>

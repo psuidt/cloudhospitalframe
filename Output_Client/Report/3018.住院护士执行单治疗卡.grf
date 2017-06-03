@@ -1,0 +1,388 @@
+Object Report
+	Version='6.0.1.0'
+	Title='治疗卡'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Size=256
+		Width=10
+		Height=13.4
+		LeftMargin=0
+		TopMargin=0
+		RightMargin=0
+		BottomMargin=0
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Border
+			Styles=[DrawLeft|DrawRight|DrawBottom]
+		End
+		Object Recordset
+			Items Field
+				Item
+					Name='OrderContents'
+				End
+				Item
+					Name='PatName'
+				End
+				Item
+					Name='BedCode'
+				End
+				Item
+					Name='GroupID'
+				End
+				Item
+					Name='Unit'
+				End
+				Item
+					Name='Usage'
+				End
+				Item
+					Name='ExecDate'
+					Type=DateTime
+					Format='yyyy-MM-dd'
+				End
+				Item
+					Name='DeptName'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=7.17021
+			End
+			Item
+				Name='Column2'
+				Width=1
+			End
+			Item
+				Name='Column3'
+			End
+		End
+		Object ColumnContent
+			Height=1.59
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					WordWrap=T
+					CanGrow=T
+					DataField='OrderContents'
+				End
+				Item
+					Column='Column2'
+					CanGrow=T
+					CanShrink=T
+				End
+				Item
+					Column='Column3'
+					CanGrow=T
+					CanShrink=T
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.608542
+			RepeatStyle=OnGroupHeader
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='医嘱内容'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='次'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='执行时间及签名'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group2'
+				ByFields='PatName'
+				Object GroupHeader
+					Height=1.19063
+					PrintGridBorder=F
+					RepeatOnPage=T
+					Items Control
+						Item
+							Type=StaticBox
+							Name='StaticBox4'
+							Left=2.96333
+							Top=0.555625
+							Width=0.820208
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='床号'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox6'
+							Left=4.7625
+							Top=0.555625
+							Width=0.820208
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='姓名'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox2'
+							Left=0.370417
+							Top=0.555625
+							Width=0.79375
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='科室'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox13'
+							AlignColumnSide=Right
+							AlignColumnEx='Column2'
+							Left=7.40833
+							Top=0.555625
+							Width=0.79375
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='日期'
+						End
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Left=1.16417
+							Top=0.555625
+							Width=1.79917
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							DataField='DeptName'
+						End
+						Item
+							Type=FieldBox
+							Name='FieldBox2'
+							Left=3.78354
+							Top=0.555625
+							Width=0.820208
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							DataField='BedCode'
+						End
+						Item
+							Type=FieldBox
+							Name='FieldBox3'
+							Left=5.55625
+							Top=0.555625
+							Width=1.79917
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							DataField='PatName'
+						End
+						Item
+							Type=FieldBox
+							Name='FieldBox4'
+							AlignColumn='Column3'
+							Left=8.17563
+							Top=0.555625
+							Width=3.01625
+							Height=0.582083
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							DataField='ExecDate'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox20'
+							Left=0.396875
+							Width=2.59292
+							Height=0.449792
+							Text='治疗单'
+						End
+					End
+					GroupKeepTogether=FirstDetail
+				End
+				Object GroupFooter
+					Height=1.00542
+					PrintGridBorder=F
+					Items Control
+						Item
+							Type=StaticBox
+							Name='StaticBox14'
+							Width=1.19063
+							Height=0.608542
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=BottomLeft
+							Text='打印者'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox19'
+							Left=6.00604
+							Width=1.40229
+							Height=0.608542
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=BottomLeft
+							Text='打印时间'
+						End
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							Left=1.40229
+							Width=2.59292
+							Height=0.79375
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							Text='[#{Printer}#]'
+						End
+						Item
+							Type=SystemVarBox
+							Name='SystemVarBox1'
+							Left=7.64646
+							Width=3.38667
+							Height=0.79375
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Weight=400
+								Charset=134
+							End
+							Format='yyyy-MM-dd HH:mm:ss'
+							SystemVar=CurrentDateTime
+						End
+					End
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='HospitalName'
+		End
+		Item
+			Name='Printer'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			Height=1.40229
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox1'
+					Center=Both
+					Left=0.687917
+					Top=0.291042
+					Width=9.81604
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='StaticBox1'
+					Parameter='HospitalName'
+				End
+			End
+			RepeatOnPage=T
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End

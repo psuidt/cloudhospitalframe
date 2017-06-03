@@ -1,0 +1,40 @@
+body 
+{
+	/*TEXT-ALIGN: center;*/
+	background:#f8f8f8;
+}
+.container {
+  margin-left: auto;
+  margin-right : auto;
+  /*text-align: center;*/
+  background-color:White;
+  width:1086px;height:756px;
+  border:0px solid #2a6496;
+  padding-right: 0px;
+ padding-left : 0px;
+  
+}
+.wenshu_title
+{
+	text-align:center;
+}
+
+.wenshu_patientinfo
+{
+	 padding-left:15px;
+}
+
+.wenshu_patientinfo_underline
+{
+	text-decoration:underline;
+	color:Blue;
+}
+.wenshu_content
+{
+	text-align:center;
+}
+
+.wenshu_table tr
+{
+ height:37px;
+}

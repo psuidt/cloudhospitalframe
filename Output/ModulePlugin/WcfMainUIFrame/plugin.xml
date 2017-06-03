@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib.CoreFrame" />
+  </configSections>
+  <unity>
+    <container>
+    </container>
+  </unity>
+  <plugin name="MainFrame.Service" version="1.2" title="主框架服务插件" author="kakake" plugintype="Wcf" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="通用权限框架插件程序" />
+      <data key="updaterecord" value="无" />
+      <data key="headpic" value="/ModulePlugin/efwplus_website/headpic/default.png" />
+      <data key="StartItem" value="wcfclientLoginController" />
+      <data key="SystemName" value="企业管理系统" />
+      <data key="LoginBackgroundImage" value="images\\login.JPG" />
+      <data key="WEB_serverUrl" value="http://localhost:51796/" />
+      <data key="isdebug" value="false" />
+      <data key="menuconfig" value="ModulePlugin\WcfMainUIFrame\menus.xml" />
+      <data key="LoginCompleted" value="" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="WinMainUIFrame.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+    </issue>
+    <setup>
+    </setup>
+    <menus>
+     </menus>
+  </plugin>
+</configuration>

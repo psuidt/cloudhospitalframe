@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37492867-21A2-4102-8F30-ECCAFA84EDEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Books_Wcf.Winform</RootNamespace>
+    <AssemblyName>Books_Wcf.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\Component\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.CoreFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.CoreFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WcfFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WcfFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WinformFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WinformFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_Entity">
+      <HintPath>..\..\..\Output\HIS_Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\bookwcfclientController.cs" />
+    <Compile Include="Controller\ITestIPDOrderDbHelper.cs" />
+    <Compile Include="IView\IfrmBookManager.cs" />
+    <Compile Include="IView\IfrmEfwControlDemo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\frmBookManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\frmBookManager.Designer.cs">
+      <DependentUpon>frmBookManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmEfwControlDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmEfwControlDemo.Designer.cs">
+      <DependentUpon>FrmEfwControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmIPDOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmIPDOrder.Designer.cs">
+      <DependentUpon>FrmIPDOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmSettlementPanel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmSettlementPanel2.Designer.cs">
+      <DependentUpon>FrmSettlementPanel2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewForm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\frmBookManager.resx">
+      <DependentUpon>frmBookManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmEfwControlDemo.resx">
+      <DependentUpon>FrmEfwControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmIPDOrder.resx">
+      <DependentUpon>FrmIPDOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmSettlementPanel2.resx">
+      <DependentUpon>FrmSettlementPanel2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\基础框架\EfwControls\EfwControls.csproj">
+      <Project>{a7618987-492b-4d5d-92c2-0381ec45817f}</Project>
+      <Name>EfwControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>MD $(SolutionDir)Output_Client\ModulePlugin\Books_Wcf\dll
+Copy "$(TargetDir)\$(TargetFileName)" "$(SolutionDir)Output_Client\ModulePlugin\Books_Wcf\dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

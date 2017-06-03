@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib.CoreFrame" />
+  </configSections>
+  <unity>
+    <assembly name="Books_Wcf"></assembly>
+    <namespace name="Books_Wcf.Dao"></namespace>
+    <namespace name="Books_Wcf.UnitTest.TestDao.Dao"></namespace>
+    <namespace name="Books_Wcf.Entity"></namespace>
+    <namespace name="Books_Wcf.UnitTest.TestEntity"></namespace>
+    <container>
+      <!--真实环境-->
+      <register type="IBookDao" mapTo="SqlBookDao"></register>
+      <!--测试环境-->
+      <!--<register type="IBookDao" mapTo="TestBookDao"></register>
+      <register type="Books" mapTo="unBooks"></register>-->
+    </container>
+  </unity>
+  <plugin name="Books.Service" version="1.0" title="Books服务" author="kakake" plugintype="Wcf" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="为“增删改查”的book实例提供后台服务" />
+      <data key="updaterecord" value="" />
+      <data key="headpic" value="" />
+      <data key="StartItem" value="bookwcfclientController" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="Books_Wcf.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+      <add type="dir" path="dll" source="" />
+      <add type="file" path="dll/Books_Wcf.dll" source="" />
+      <add type="file" path="plugin.xml" source="" />
+    </issue>
+    <setup>
+      
+    </setup>
+    <menus>
+    </menus>
+  </plugin>
+</configuration>

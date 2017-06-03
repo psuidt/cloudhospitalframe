@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7618987-492B-4D5D-92C2-0381EC45817F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EfwControls</RootNamespace>
+    <AssemblyName>EfwControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSoft.Writer, Version=1.2015.12.23, Culture=neutral, PublicKeyToken=2e40e961ea876340, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Output_Client\Component\DCSoft.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EFWCoreLib.CoreFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.CoreFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WcfFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WcfFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WinformFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WinformFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EMR_Entity">
+      <HintPath>..\..\..\Output_Client\EMR_Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_Entity">
+      <HintPath>..\..\..\Output_Client\HIS_Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Component\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NSoup">
+      <HintPath>..\..\..\Component\NSoup.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\..\Component\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardReader\CardReader.cs" />
+    <Compile Include="Common\AgeExtend.cs" />
+    <Compile Include="Common\AsynProcessing.cs" />
+    <Compile Include="Common\ConvertDataExtend.cs" />
+    <Compile Include="Common\CustomConfigManager.cs" />
+    <Compile Include="Common\DESEncryptor.cs" />
+    <Compile Include="Common\Licensing\ComponentLicense.cs" />
+    <Compile Include="Common\Licensing\ComponentLicenseProvider.cs" />
+    <Compile Include="Common\PageInfo.cs" />
+    <Compile Include="Common\PopupControl\GripBounds.cs" />
+    <Compile Include="Common\PopupControl\NativeMethods.cs" />
+    <Compile Include="Common\PopupControl\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\PopupControl\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PopupControl\PopupAnimations.cs" />
+    <Compile Include="Common\SqlDbHelper.cs" />
+    <Compile Include="Common\SqlPage.cs" />
+    <Compile Include="Common\Tools.cs" />
+    <Compile Include="Common\UpgradeFileConfigManager.cs" />
+    <Compile Include="CustomControl\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomControl\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\CardDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CardDataGrid.Designer.cs">
+      <DependentUpon>CardDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\ComboShowCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\ComboShowCard.Designer.cs">
+      <DependentUpon>ComboShowCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\DataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\DataGrid.Designer.cs">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\DialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomControl\DialogForm.Designer.cs">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\frmForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\frmForm.Designer.cs">
+      <DependentUpon>frmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\frmHotkeys.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\frmHotkeys.Designer.cs">
+      <DependentUpon>frmHotkeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\GridBoxCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\GridDesignReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\GridDesignReport.Designer.cs">
+      <DependentUpon>GridDesignReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\GridDisplayReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\GridDisplayReport.Designer.cs">
+      <DependentUpon>GridDisplayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\GridReport.cs" />
+    <Compile Include="CustomControl\MultiSelectText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\MultiSelectText.Designer.cs">
+      <DependentUpon>MultiSelectText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\NumericKeyBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\NumericKeyBoard.Designer.cs">
+      <DependentUpon>NumericKeyBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\Pager.Designer.cs">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\PublicCardClass.cs" />
+    <Compile Include="CustomControl\StatDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\StatDateTime.Designer.cs">
+      <DependentUpon>StatDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\TextBoxCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HISControl\BedCard.Controls\BedCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\BedCard.Controls\BedCardControl.Designer.cs">
+      <DependentUpon>BedCardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\BedCard.Controls\BedCardControlNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\BedCard.Controls\BedCardControlNew.Designer.cs">
+      <DependentUpon>BedCardControlNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\BedCard.Controls\BedInfo.cs" />
+    <Compile Include="HISControl\BedCard.Controls\BedItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\CustomDocumentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\CustomDocumentControl.designer.cs">
+      <DependentUpon>CustomDocumentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\SingleLineX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\SingleLineX.designer.cs">
+      <DependentUpon>SingleLineX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\SingleLineY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\CustomDocument.Controls\SingleLineY.designer.cs">
+      <DependentUpon>SingleLineY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Emr.Controls\Controller\EmrControlController.cs" />
+    <Compile Include="HISControl\Emr.Controls\Controller\EmrDbHelper.cs" />
+    <Compile Include="HISControl\Emr.Controls\Controller\IEmrDbHelper.cs" />
+    <Compile Include="HISControl\Emr.Controls\Controller\IMedicalCaseDbHelper.cs" />
+    <Compile Include="HISControl\Emr.Controls\Controller\MedicalCaseControlController.cs" />
+    <Compile Include="HISControl\Emr.Controls\Controller\MedicalCaseDbHelper.cs" />
+    <Compile Include="HISControl\Emr.Controls\IView\IMedicalCaseControlView.cs" />
+    <Compile Include="HISControl\Emr.Controls\MedicalCaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Emr.Controls\MedicalCaseControl.Designer.cs">
+      <DependentUpon>MedicalCaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Emr.Controls\EmrControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Emr.Controls\EmrControl.Designer.cs">
+      <DependentUpon>EmrControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Emr.Controls\Entity\EmrEnum.cs" />
+    <Compile Include="HISControl\Emr.Controls\IView\IEmrControlView.cs" />
+    <Compile Include="HISControl\Orders.Controls\Controller\OrderFeeControlController.cs" />
+    <Compile Include="HISControl\Orders.Controls\Controller\OrdersControlController.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceDrugItem.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceEntrust.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceExecDept.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceFrequency.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceUnit.cs.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\CardDataSourceUsage.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\OrderEnum.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\OrderProcess.cs" />
+    <Compile Include="HISControl\Orders.Controls\Entity\OrderRecord.cs" />
+    <Compile Include="HISControl\Orders.Controls\IOrderDbHelper.cs" />
+    <Compile Include="HISControl\Orders.Controls\IOrderFeeDbHelper.cs" />
+    <Compile Include="HISControl\Orders.Controls\IPDOrderFeeDbHelper.cs" />
+    <Compile Include="HISControl\Orders.Controls\IView\IOrderFeeControlView.cs" />
+    <Compile Include="HISControl\Orders.Controls\IView\IOrdersControlView.cs" />
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmOrderTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmOrderTime.Designer.cs">
+      <DependentUpon>FrmOrderTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmDeathOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmDeathOrder.Designer.cs">
+      <DependentUpon>FrmDeathOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmOutHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmOutHospital.Designer.cs">
+      <DependentUpon>FrmOutHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmStopOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmStopOrder.Designer.cs">
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmTransDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmTransDept.Designer.cs">
+      <DependentUpon>FrmTransDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmUpdateTerminalNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\FrmUpdateTerminalNum.Designer.cs">
+      <DependentUpon>FrmUpdateTerminalNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\OrderFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\OrderFee.Designer.cs">
+      <DependentUpon>OrderFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\OrdersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Orders.Controls\ViewForm\OrdersControl.Designer.cs">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\Entity\OPD_PresMouldHead.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Action\IPrescription.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Action\IPrescriptionControl.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Action\IPrescripttionDbHelper.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Action\PrescriptionControlController.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\CommonMvc\BaseController.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\CommonMvc\IBaseView.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceDrugItem.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceEntrust.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceExecDept.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceFrequency.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceUnit.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\CardDataSourceUsage.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\Prescription.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\PresDetail.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\PresHead.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\Entity\PresStatus.cs" />
+    <Compile Include="HISControl\PrescriptionTmp.Controls\PrescriptionTmpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\PrescriptionTmp.Controls\PrescriptionTmpControl.Designer.cs">
+      <DependentUpon>PrescriptionTmpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\PrescriptionTmp.Controls\PresTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\PrescriptionTmp.Controls\PresTemplate.Designer.cs">
+      <DependentUpon>PresTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\PrescriptionTmp.Controls\SaveSetMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\PrescriptionTmp.Controls\SaveSetMeal.Designer.cs">
+      <DependentUpon>SaveSetMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\Action\IPrescription.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Action\IPrescriptionControl.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Action\IPrescripttionDbHelper.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Action\PrescriptionControlController.cs" />
+    <Compile Include="HISControl\Prescription.Controls\CommonMvc\BaseController.cs" />
+    <Compile Include="HISControl\Prescription.Controls\CommonMvc\IBaseView.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceDrugItem.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceEntrust.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceExecDept.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceFrequency.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceUnit.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\CardDataSourceUsage.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\Prescription.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\PresDetail.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\PresHead.cs" />
+    <Compile Include="HISControl\Prescription.Controls\Entity\PresStatus.cs" />
+    <Compile Include="HISControl\Prescription.Controls\PrescriptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\PrescriptionControl.Designer.cs">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\PresTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\PresTemplate.Designer.cs">
+      <DependentUpon>PresTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\SaveSetMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\Prescription.Controls\SaveSetMeal.Designer.cs">
+      <DependentUpon>SaveSetMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Temperature.Controls\temperaturebrower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\Temperature.Controls\temperaturebrower.designer.cs">
+      <DependentUpon>temperaturebrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\Temperature.Controls\TemplateHelper.cs" />
+    <Compile Include="HISControl\UCPayMode\AsynPaymentCalculate.cs" />
+    <Compile Include="HISControl\UCPayMode\CostPayManager.cs" />
+    <Compile Include="HISControl\UCPayMode\FrmSettlementPanel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISControl\UCPayMode\FrmSettlementPanel2.Designer.cs">
+      <DependentUpon>FrmSettlementPanel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISControl\UCPayMode\PAY_THREAD.cs" />
+    <Compile Include="HISControl\UCPayMode\UCPayMode2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HISControl\UCPayMode\UCPayMode2.designer.cs">
+      <DependentUpon>UCPayMode2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser\FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\IfrmWebBrowserView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControl\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\CardDataGrid.resx">
+      <DependentUpon>CardDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\ComboShowCard.resx">
+      <DependentUpon>ComboShowCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\DialogForm.resx">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\GridDesignReport.resx">
+      <DependentUpon>GridDesignReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\GridDisplayReport.resx">
+      <DependentUpon>GridDisplayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\MultiSelectText.resx">
+      <DependentUpon>MultiSelectText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\NumericKeyBoard.resx">
+      <DependentUpon>NumericKeyBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\StatDateTime.resx">
+      <DependentUpon>StatDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\BedCard.Controls\BedCardControl.resx">
+      <DependentUpon>BedCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\BedCard.Controls\BedCardControlNew.resx">
+      <DependentUpon>BedCardControlNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\CustomDocument.Controls\CustomDocumentControl.resx">
+      <DependentUpon>CustomDocumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\CustomDocument.Controls\SingleLineX.resx">
+      <DependentUpon>SingleLineX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\CustomDocument.Controls\SingleLineY.resx">
+      <DependentUpon>SingleLineY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Emr.Controls\MedicalCaseControl.resx">
+      <DependentUpon>MedicalCaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Emr.Controls\EmrControl.resx">
+      <DependentUpon>EmrControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmOrderTime.resx">
+      <DependentUpon>FrmOrderTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmDeathOrder.resx">
+      <DependentUpon>FrmDeathOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmOutHospital.resx">
+      <DependentUpon>FrmOutHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmStopOrder.resx">
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmTransDept.resx">
+      <DependentUpon>FrmTransDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\FrmUpdateTerminalNum.resx">
+      <DependentUpon>FrmUpdateTerminalNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\OrderFee.resx">
+      <DependentUpon>OrderFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Orders.Controls\ViewForm\OrdersControl.resx">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\PrescriptionTmp.Controls\PrescriptionTmpControl.resx">
+      <DependentUpon>PrescriptionTmpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\PrescriptionTmp.Controls\PresTemplate.resx">
+      <DependentUpon>PresTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\PrescriptionTmp.Controls\SaveSetMeal.resx">
+      <DependentUpon>SaveSetMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Prescription.Controls\PrescriptionControl.resx">
+      <DependentUpon>PrescriptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Prescription.Controls\PresTemplate.resx">
+      <DependentUpon>PresTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Prescription.Controls\SaveSetMeal.resx">
+      <DependentUpon>SaveSetMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\Temperature.Controls\temperaturebrower.resx">
+      <DependentUpon>temperaturebrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\UCPayMode\FrmSettlementPanel2.resx">
+      <DependentUpon>FrmSettlementPanel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISControl\UCPayMode\UCPayMode2.resx">
+      <DependentUpon>UCPayMode2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser\FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatientMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\病案首页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\检查.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\特殊治疗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\体温单.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\医嘱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Axgrdes6Lib">
+      <Guid>{C5A16330-A084-48C9-BC0F-0D0B37A14123}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Axgregn6Lib">
+      <Guid>{4018F953-1BFE-441E-8A04-DC8BA1FF060E}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grdes6Lib">
+      <Guid>{C5A16330-A084-48C9-BC0F-0D0B37A14123}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>True</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="gregn6Lib">
+      <Guid>{4018F953-1BFE-441E-8A04-DC8BA1FF060E}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>True</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B超2.png" />
+    <None Include="Resources\医嘱2.png" />
+    <None Include="Resources\b超1.png" />
+    <None Include="Resources\医嘱1.png" />
+    <None Include="Resources\B超.png" />
+    <None Include="Resources\女.png" />
+    <Content Include="Resources\正常皮肤.jpg" />
+    <None Include="Resources\温度计_2.png" />
+    <None Include="Resources\温度计1.png" />
+    <Content Include="Resources\灰色皮肤.jpg" />
+    <None Include="Resources\病历本2.png" />
+    <None Include="Resources\病历本.png" />
+    <None Include="Resources\病案首页2.png" />
+    <None Include="Resources\男.png" />
+    <Content Include="Resources\白色皮肤.jpg" />
+    <None Include="Resources\空床图.png" />
+    <None Include="Resources\空床图2.png" />
+    <Content Include="Resources\红色皮肤.jpg" />
+    <Content Include="Resources\黄色皮肤.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Component\"
+Copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Output_Client\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebModulePlugin>
+  </WebModulePlugin>
+  <WinformModulePlugin EntryPlugin="" EntryController="">
+  </WinformModulePlugin>
+  <WcfModulePlugin>
+    <Plugin name="MainFrame.Service" path="ModulePlugin/WcfMainUIFrame/plugin.xml" title="主框架服务插件" isdevelopment="1" />
+    <Plugin name="Books.Service" path="ModulePlugin/Books_Wcf/plugin.xml" title="DEMO服务插件" isdevelopment="1" />
+    <Plugin name="BaseProject.Service" path="ModulePlugin/BaseProject/plugin.xml" title="基础项目服务" isdevelopment="1" />
+    <!--<Plugin name="DrugProject.Service" path="ModulePlugin/DrugProject/plugin.xml" title="药品物资项目服务" isdevelopment="1" />
+    <Plugin name="IPProject.Service" path="ModulePlugin/IPProject/plugin.xml" title="住院项目服务" isdevelopment="1" />
+    <Plugin name="OPProject.Service" path="ModulePlugin/OPProject/plugin.xml" title="门诊项目服务" isdevelopment="1" />
+    <Plugin name="MIProject.Service" path="ModulePlugin/MIProject/plugin.xml" title="医保接口HIS端服务" isdevelopment="1" />
+    <Plugin name="MIService.Service" path="ModulePlugin/MIService/plugin.xml" title="医保接口医院端服务" isdevelopment="1" />
+    <Plugin name="BGProject.Service" path="ModulePlugin/BGProject/plugin.xml" title="院内血糖接口HIS端服务" isdevelopment="1" />
+    <Plugin name="BGService.Service" path="ModulePlugin/BGService/plugin.xml" title="院内血糖接口WebApi服务" isdevelopment="1" />
+    
+    <Plugin name="PTProject.Service" path="ModulePlugin/PTProject/plugin.xml" title="性能测试服务" isdevelopment="1" />-->
+
+    <!--
+    <Plugin name="EMRMongoDB.Service" path="ModulePlugin/EMRMongoDB/plugin.xml" title="电子病历数据存储服务" isdevelopment="1" />
+    <Plugin name="EMRBaseProject.Service" path="ModulePlugin/EMRBaseProject/plugin.xml" title="电子病历基础数据维护服务" isdevelopment="1" />
+    <Plugin name="EMRDocProject.Service" path="ModulePlugin/EMRDocProject/plugin.xml" title="电子病历医生工作站服务" isdevelopment="1" />
+    <Plugin name="EMRHISInterface.Service" path="ModulePlugin/EMRHISInterface/plugin.xml" title="电子病历与HIS系统交互的接口服务" isdevelopment="1" />
+    -->
+  </WcfModulePlugin>
+</pluginsys>

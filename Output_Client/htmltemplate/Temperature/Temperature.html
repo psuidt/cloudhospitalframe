@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="F:/htmltemplate/component/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="F:/htmltemplate/Temperature/template.css" rel="stylesheet">
+
+
+    <script src="F:/htmltemplate/component/bootstrap-3.3.4-dist/js/jquery.min.js"></script>
+    <script src="F:/htmltemplate/component/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="F:/htmltemplate/component/bootstrap-3.3.4-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="F:/htmltemplate/component/jquery-easyui-1.4.1/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="F:/htmltemplate/component/jquery-easyui-1.4.1/themes/icon.css">
+    <script type="text/javascript" src="F:/htmltemplate/component/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="F:/htmltemplate/component/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+
+    <script type="text/javascript" src="F:/htmltemplate/component/jquery.json-2.3.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="F:/htmltemplate/component/jsxgraph.css" />
+    <script type="text/javascript" src="F:/htmltemplate/component/jsxgraphcore.js"></script>
+
+    <script type="text/javascript" src="F:/htmltemplate/Temperature/Temperature.js"></script>
+
+    <!--<script type="text/javascript">
+        z
+    </script>-->
+
+
+
+    <style type="text/css">
+        .container {
+            width: 756px;
+            height: 1086px;
+            padding-right: 0px;
+            padding-left: 0px;
+            position: relative;
+            z-index: 99;
+        }
+
+        .small-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .temperature_date {
+            height: 120px;
+        }
+
+        .temperature_drawline {
+            height: 600px;
+        }
+
+        .temperature_otherdata {
+            height: 250px;
+        }
+
+        .temperature_foot {
+            height: 30px;
+            text-align: center;
+        }
+
+        .temperature_date table td {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .temperature_date table tr {
+            height: 30px;
+        }
+
+        .tp_time td {
+            font-size: 11px;
+            width: 15px;
+        }
+
+        table {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="F:/htmltemplate/Temperature/体温单.png" style="border:0px; top:0px; left:0px;">
+        <div class="small-div">
+            <!-- 按照图片内容的位置来设置每段的高度-->
+            <div class="wenshu_title" style="height:65px;">
+                <!--<span style="font-size:40px;">三测单</span>-->
+            </div>
+            <div class="wenshu_patientinfo" style="height:25px;">
+                <span>科室：<span class="wenshu_patientinfo_underline">产科</span></span>
+                <span>姓名：<span class="wenshu_patientinfo_underline">小欢</span></span>
+                <span>性别：<span class="wenshu_patientinfo_underline">女</span></span>
+                <span>年龄：<span class="wenshu_patientinfo_underline">26岁</span></span>
+                <span>床号：<span class="wenshu_patientinfo_underline">12</span></span>
+                <span>住院号：<span class="wenshu_patientinfo_underline">00002342</span></span>
+                <span>入院日期：<span class="wenshu_patientinfo_underline">2015-05-4</span></span>
+                <span>诊断：<span class="wenshu_patientinfo_underline">早产</span></span>
+            </div>
+            <div class="temperature_date">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width:120px;">&nbsp;</td>
+                        <td style="width:90px;">2015-5-1</td>
+                        <td style="width:90px;">5-2</td>
+                        <td style="width:90px;">5-3</td>
+                        <td style="width:90px;">5-4</td>
+                        <td style="width:90px;">5-5</td>
+                        <td style="width:90px;">5-6</td>
+                        <td style="width:90px;">5-7</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr style="color:Red;">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="7">
+                            <table class="tp_time" style="width: 100%; height:100%;">
+                                <tr style="height:100%;">
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                    <td style="color:Red;">4</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>4</td>
+                                    <td style="color:Red;">8</td>
+                                    <td style="color:Red;">12</td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temperature_drawline">
+                <table style="width:100%;height:100%">
+                    <tr>
+                        <td style="width:120px;">&nbsp;</td>
+                        <td>
+                            <div id="drawlineDiv" style="width:100%; height:600px;"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temperature_otherdata">
+
+            </div>
+            <div class="temperature_foot">
+                <span>（第 1 页）</span>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">录入数据</h4>
+            </div>
+            <div class="modal-body">
+                <div style="padding:10px">
+                    <form id="formdata" method="post">
+                        <table>
+                            <tr>
+                                <td>日期:</td>
+                                <td><input id="form_date" class="easyui-datebox" type="text" name="date" data-options="required:false" style="width:100px;"></input></td>
+                                <td style="padding-left:5px;">时间:</td>
+                                <td><input id="form_time" class="easyui-combobox" type="text" name="time" data-options="valueField: 'time',textField: 'time',data:[]" style="width:70px;"></input></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="cleardata();">清空</button>
+                <button type="button" class="btn btn-primary" onclick="finishdata();">完成</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--数据存储的结构(对应后台表存储数据)-->
+<div id="datastorage" style="display:none">
+<input acceptflag="true" type="hidden" id="scd_data" value='{"title":{"date":["2015-5-1","2015-5-2","2015-5-3","2015-5-4","2015-5-5","2015-5-6","2015-5-7"],"day":["1","2","3","4","5","6","7"],"operday":["","","","0","1","2","3"]},"lines":[{"datatype":1,"date":[{"index":1,"text":"2015-5-1","time":["38.5","40","41","D","38","39"]},{"index":2,"text":"2015-5-2","time":["38.5","40","41","D","38","39"]}]},{"datatype":4,"date":[{"index":1,"text":"2015-5-1","time":["100","105","120","99","80","100"]},{"index":2,"text":"2015-5-2","time":["80","90","100","110","120","130"]}]}],"drawtext":{"timetext":[{"type":"入院","value":"2015-5-1 8:20"},{"type":"手术","value":"2015-5-2 8:20"}]},"other":{}}' />
+</div>
+</html>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E74CB0ED-0009-4375-A089-C181FFE0500B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_Entity</RootNamespace>
+    <AssemblyName>HIS_Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\HIS_Entity.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EFWCoreLib.CoreFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.CoreFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WcfFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WcfFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WinformFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WinformFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Component\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicData\BaseDept.cs" />
+    <Compile Include="BasicData\BaseDeptDetails.cs" />
+    <Compile Include="BasicData\BaseDeptLayer.cs" />
+    <Compile Include="BasicData\BaseDictClass.cs" />
+    <Compile Include="BasicData\BaseDictContent.cs" />
+    <Compile Include="BasicData\BaseEmpDept.cs" />
+    <Compile Include="BasicData\BaseEmployee.cs" />
+    <Compile Include="BasicData\BaseEmployeeDetails.cs" />
+    <Compile Include="BasicData\BaseEmpWard.cs" />
+    <Compile Include="BasicData\BaseGroup.cs" />
+    <Compile Include="BasicData\BaseGroupMenu.cs" />
+    <Compile Include="BasicData\BaseGroupPage.cs" />
+    <Compile Include="BasicData\BaseGroupUser.cs" />
+    <Compile Include="BasicData\BaseMessage.cs" />
+    <Compile Include="BasicData\BaseMessageRead.cs" />
+    <Compile Include="BasicData\BaseMessageType.cs" />
+    <Compile Include="BasicData\BaseMessageTypeUser.cs" />
+    <Compile Include="BasicData\BaseUser.cs" />
+    <Compile Include="BasicData\BaseWard.cs" />
+    <Compile Include="BasicData\BaseWardDept.cs" />
+    <Compile Include="BasicData\BaseWorkers.cs" />
+    <Compile Include="BasicData\BaseWorkesDetails.cs" />
+    <Compile Include="BasicData\Basic_CenterFeeItem.cs" />
+    <Compile Include="BasicData\Basic_CenterStatItem.cs" />
+    <Compile Include="BasicData\Basic_Disease.cs" />
+    <Compile Include="BasicData\Basic_ExamItem.cs" />
+    <Compile Include="BasicData\Basic_ExamItemFee.cs" />
+    <Compile Include="BasicData\Basic_ExamType.cs" />
+    <Compile Include="BasicData\Basic_HospFeeItem.cs" />
+    <Compile Include="BasicData\Basic_Invoice.cs" />
+    <Compile Include="BasicData\Basic_PatType.cs" />
+    <Compile Include="BasicData\Basic_PatTypePayment.cs" />
+    <Compile Include="BasicData\Basic_Payment.cs" />
+    <Compile Include="BasicData\Basic_ReportConfig.cs" />
+    <Compile Include="BasicData\Basic_SerialNumberSource.cs" />
+    <Compile Include="BasicData\Basic_StatItem.cs" />
+    <Compile Include="BasicData\Basic_SystemConfig.cs" />
+    <Compile Include="BasicData\Basic_StatItemSubclass.cs" />
+    <Compile Include="BasicData\BusiEntity\Constants.cs" />
+    <Compile Include="BasicData\BusiEntity\EnumExtension.cs" />
+    <Compile Include="BasicData\BusiEntity\InpatientWorkLoadEnum.cs" />
+    <Compile Include="Books_Wcf\Books.cs" />
+    <Compile Include="ClinicManage\Basic_AttachAdvice.cs" />
+    <Compile Include="ClinicManage\Basic_Channel.cs" />
+    <Compile Include="ClinicManage\Basic_ChannelFee.cs" />
+    <Compile Include="ClinicManage\Basic_Entrust.cs" />
+    <Compile Include="ClinicManage\Basic_ExecuteBillChannel.cs" />
+    <Compile Include="ClinicManage\Basic_ExecuteBills.cs" />
+    <Compile Include="ClinicManage\Basic_Frequency.cs" />
+    <Compile Include="ClinicManage\BusiEntity\OPDEnum.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCaseOtherInfo.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCaseDiagoInfo.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCaseFeeInfo.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCaseInHospInfo.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCaseOperationInfo.cs" />
+    <Compile Include="ClinicManage\MedicalCase\MedicalCasePatient.cs" />
+    <Compile Include="ClinicManage\EXA_MedicalApplyDetail.cs" />
+    <Compile Include="ClinicManage\EXA_MedicalApplyHead.cs" />
+    <Compile Include="ClinicManage\EXA_MedicalConfir.cs" />
+    <Compile Include="ClinicManage\EXA_MedicalConfirDetail.cs" />
+    <Compile Include="ClinicManage\IPD_Diagnosis.cs" />
+    <Compile Include="ClinicManage\IPD_OrderModelDetail.cs" />
+    <Compile Include="ClinicManage\IPD_OrderModelHead.cs" />
+    <Compile Include="ClinicManage\IPD_OrderRecord.cs" />
+    <Compile Include="ClinicManage\IPD_TransDept.cs" />
+    <Compile Include="ClinicManage\IPN_OrderAstResult.cs" />
+    <Compile Include="ClinicManage\IPN_OrderExecBillRecord.cs" />
+    <Compile Include="ClinicManage\MSreplication_options.cs" />
+    <Compile Include="ClinicManage\OPD_CommonDiagnosis.cs" />
+    <Compile Include="ClinicManage\OPD_DiagnosisRecord.cs" />
+    <Compile Include="ClinicManage\OPD_InpatientReg.cs" />
+    <Compile Include="ClinicManage\OPD_MedicalRecord.cs" />
+    <Compile Include="ClinicManage\OPD_OMRDicCategory.cs" />
+    <Compile Include="ClinicManage\OPD_OMRDicElement.cs" />
+    <Compile Include="ClinicManage\OPD_OMRTmpDetail.cs" />
+    <Compile Include="ClinicManage\OPD_OMRTmpHead.cs" />
+    <Compile Include="ClinicManage\OPD_PresDetail.cs" />
+    <Compile Include="ClinicManage\OPD_PresHead.cs" />
+    <Compile Include="ClinicManage\OPD_PresMouldDetail.cs" />
+    <Compile Include="ClinicManage\OPD_PresMouldHead.cs" />
+    <Compile Include="ClinicManage\OPD_PresPrintRecord.cs" />
+    <Compile Include="ClinicManage\OPN_PresAstResult.cs" />
+    <Compile Include="ClinicManage\OPN_PresExecRecord.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGBatchAllot.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGBillResult.cs" />
+    <Compile Include="DrugManage\BusiEntity\BillMasterShower.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGLendModel.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGDebitModel.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGBusiType.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGConstant.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGEnum.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGNotEnough.cs" />
+    <Compile Include="DrugManage\BusiEntity\DGStoreResult.cs" />
+    <Compile Include="DrugManage\DG_AdjDetail.cs" />
+    <Compile Include="DrugManage\DG_AdjHead.cs" />
+    <Compile Include="DrugManage\DG_AntDic.cs" />
+    <Compile Include="DrugManage\DG_BusiType.cs" />
+    <Compile Include="DrugManage\DG_CenterSpecDic.cs" />
+    <Compile Include="DrugManage\DG_ChildTypeDic.cs" />
+    <Compile Include="DrugManage\DG_DeptDic.cs" />
+    <Compile Include="DrugManage\DG_DeptRelation.cs" />
+    <Compile Include="DrugManage\DG_Dept_Type.cs" />
+    <Compile Include="DrugManage\DG_DosageDic.cs" />
+    <Compile Include="DrugManage\DG_HospMakerDic.cs" />
+    <Compile Include="DrugManage\DG_Location.cs" />
+    <Compile Include="DrugManage\DG_MedicareDic.cs" />
+    <Compile Include="DrugManage\DG_PayRecord.cs" />
+    <Compile Include="DrugManage\DG_Pharmacology.cs" />
+    <Compile Include="DrugManage\DG_ProductDic.cs" />
+    <Compile Include="DrugManage\DG_SupportDic.cs" />
+    <Compile Include="DrugManage\DG_TypeDic.cs" />
+    <Compile Include="DrugManage\DS_Account.cs" />
+    <Compile Include="DrugManage\DS_ApplyDetail.cs" />
+    <Compile Include="DrugManage\DS_ApplyHead.cs" />
+    <Compile Include="DrugManage\DS_AuditDetail.cs" />
+    <Compile Include="DrugManage\DS_AuditHead.cs" />
+    <Compile Include="DrugManage\DS_BalanceRecord.cs" />
+    <Compile Include="DrugManage\DS_Batch.cs" />
+    <Compile Include="DrugManage\DS_CheckDetail.cs" />
+    <Compile Include="DrugManage\DS_CheckHead.cs" />
+    <Compile Include="DrugManage\DS_InStoreDetail.cs" />
+    <Compile Include="DrugManage\DS_InstoreHead.cs" />
+    <Compile Include="DrugManage\DS_IPDispDetail.cs" />
+    <Compile Include="DrugManage\DS_IPDispHead.cs" />
+    <Compile Include="DrugManage\DS_OPDispDetail.cs" />
+    <Compile Include="DrugManage\DS_OPDispHead.cs" />
+    <Compile Include="DrugManage\DS_OutStoreDetail.cs" />
+    <Compile Include="DrugManage\DS_OutStoreHead.cs" />
+    <Compile Include="DrugManage\DS_Storage.cs" />
+    <Compile Include="DrugManage\DS_ValidStorage.cs" />
+    <Compile Include="DrugManage\DW_Account.cs" />
+    <Compile Include="DrugManage\DW_AuditDetail.cs" />
+    <Compile Include="DrugManage\DW_AuditHead.cs" />
+    <Compile Include="DrugManage\DW_BalanceRecord.cs" />
+    <Compile Include="DrugManage\DW_Batch.cs" />
+    <Compile Include="DrugManage\DW_CheckDetail.cs" />
+    <Compile Include="DrugManage\DW_CheckHead.cs" />
+    <Compile Include="DrugManage\DW_InStoreDetail.cs" />
+    <Compile Include="DrugManage\DW_InStoreHead.cs" />
+    <Compile Include="DrugManage\DW_OutStoreDetail.cs" />
+    <Compile Include="DrugManage\DW_OutStoreHead.cs" />
+    <Compile Include="DrugManage\DW_PlanDetail.cs" />
+    <Compile Include="DrugManage\DW_PlanHead.cs" />
+    <Compile Include="DrugManage\DW_Storage.cs" />
+    <Compile Include="IPDoctor\IPD_Diagnosis.cs" />
+    <Compile Include="IPDoctor\IPD_OrderModelDetail.cs" />
+    <Compile Include="IPDoctor\IPD_OrderModelHead.cs" />
+    <Compile Include="IPDoctor\IPD_OrderRecord.cs" />
+    <Compile Include="IPDoctor\IPD_TransDept.cs" />
+    <Compile Include="IPManage\BusiEntity\IP_DrugStore.cs" />
+    <Compile Include="IPManage\BusiEntity\IP_FeeTimes.cs" />
+    <Compile Include="IPManage\BusiEntity\IP_OrderCheck.cs" />
+    <Compile Include="IPManage\IP_Account.cs" />
+    <Compile Include="IPManage\IP_BabyList.cs" />
+    <Compile Include="IPManage\IP_PluRecord.cs" />
+    <Compile Include="IPManage\IP_BedFee.cs" />
+    <Compile Include="IPManage\IP_BedInfo.cs" />
+    <Compile Include="IPManage\IP_BedLog.cs" />
+    <Compile Include="IPManage\IP_CostDetail.cs" />
+    <Compile Include="IPManage\IP_CostHead.cs" />
+    <Compile Include="IPManage\IP_CostPayment.cs" />
+    <Compile Include="IPManage\IP_DepositList.cs" />
+    <Compile Include="IPManage\IP_DrugBillDetail.cs" />
+    <Compile Include="IPManage\IP_DrugBillHead.cs" />
+    <Compile Include="IPManage\IP_DrugBillType.cs" />
+    <Compile Include="IPManage\IP_FeeItemGenerate.cs" />
+    <Compile Include="IPManage\IP_FeeItemRecord.cs" />
+    <Compile Include="IPManage\IP_FeeItemRelationship.cs" />
+    <Compile Include="IPManage\IP_FeeItemTemplateDetail.cs" />
+    <Compile Include="IPManage\IP_FeeItemTemplateHead.cs" />
+    <Compile Include="IPManage\IP_PatientInfo.cs" />
+    <Compile Include="IPManage\IP_PatList.cs" />
+    <Compile Include="IPManage\IP_PrintInvoiceInfo.cs" />
+    <Compile Include="IPNurse\IPN_OrderAstResult.cs" />
+    <Compile Include="IPNurse\IPN_OrderExecBillRecord.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWBatchAllot.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWBillResult.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWConstant.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWEnum.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWNotEnough.cs" />
+    <Compile Include="MaterialManage\BusiEntity\MWStoreResult.cs" />
+    <Compile Include="MaterialManage\MW_Account.cs" />
+    <Compile Include="MaterialManage\MW_AuditDetail.cs" />
+    <Compile Include="MaterialManage\MW_AuditHead.cs" />
+    <Compile Include="MaterialManage\MW_BalanceRecord.cs" />
+    <Compile Include="MaterialManage\MW_Batch.cs" />
+    <Compile Include="MaterialManage\MW_CenterSpecDic.cs" />
+    <Compile Include="MaterialManage\MW_CheckDetail.cs" />
+    <Compile Include="MaterialManage\MW_CheckHead.cs" />
+    <Compile Include="MaterialManage\MW_DeptDic.cs" />
+    <Compile Include="MaterialManage\MW_DeptRelation.cs" />
+    <Compile Include="MaterialManage\MW_HospMakerDic.cs" />
+    <Compile Include="MaterialManage\MW_InStoreDetail.cs" />
+    <Compile Include="MaterialManage\MW_InStoreHead.cs" />
+    <Compile Include="MaterialManage\MW_Location.cs" />
+    <Compile Include="MaterialManage\MW_OutStoreDetail.cs" />
+    <Compile Include="MaterialManage\MW_OutStoreHead.cs" />
+    <Compile Include="MaterialManage\MW_PayRecord.cs" />
+    <Compile Include="MaterialManage\MW_PlanDetail.cs" />
+    <Compile Include="MaterialManage\MW_PlanHead.cs" />
+    <Compile Include="MaterialManage\MW_ProductDic.cs" />
+    <Compile Include="MaterialManage\MW_Storage.cs" />
+    <Compile Include="MaterialManage\MW_SupportDic.cs" />
+    <Compile Include="MaterialManage\MW_TypeDic.cs" />
+    <Compile Include="MemberManage\BusiEntity\DiscountInfo.cs" />
+    <Compile Include="MemberManage\BusiEntity\PromClass.cs" />
+    <Compile Include="MemberManage\BusiEntity\PromDetail.cs" />
+    <Compile Include="MemberManage\ME_CardTypeList.cs" />
+    <Compile Include="MemberManage\ME_ChangeCardList.cs" />
+    <Compile Include="MemberManage\ME_ConvertPoints.cs" />
+    <Compile Include="MemberManage\ME_DiscountList.cs" />
+    <Compile Include="MemberManage\ME_Gift.cs" />
+    <Compile Include="MemberManage\ME_MemberAccount.cs" />
+    <Compile Include="MemberManage\ME_MemberInfo.cs" />
+    <Compile Include="MemberManage\ME_PointsExchange.cs" />
+    <Compile Include="MemberManage\ME_PromotionProjectDetail.cs" />
+    <Compile Include="MemberManage\ME_PromotionProjectHead.cs" />
+    <Compile Include="MemberManage\ME_Recharge.cs" />
+    <Compile Include="MemberManage\ME_ScoreList.cs" />
+    <Compile Include="MIManage\BusiEntity\PatientInfo.cs" />
+    <Compile Include="MIManage\BusiEntity\ResultClass.cs" />
+    <Compile Include="MIManage\BusiEntity\TradeData.cs" />
+    <Compile Include="MIManage\Common\DivideIn.cs" />
+    <Compile Include="MIManage\Common\DivideResult.cs" />
+    <Compile Include="MIManage\Common\JsonUtil.cs" />
+    <Compile Include="MIManage\Common\Tools.cs" />
+    <Compile Include="MIManage\Common\XmlUtil.cs" />
+    <Compile Include="MIManage\MI_Catalog.cs" />
+    <Compile Include="MIManage\MI_DiseaseInformation.cs" />
+    <Compile Include="MIManage\MI_Match_Center.cs" />
+    <Compile Include="MIManage\MI_Match_HIS.cs" />
+    <Compile Include="MIManage\MI_MedicalInsurancePayRecord.cs" />
+    <Compile Include="MIManage\MI_MedicalInsuranceType.cs" />
+    <Compile Include="MIManage\MI_MIPayRecordDetail.cs" />
+    <Compile Include="MIManage\MI_MIPayRecordHead.cs" />
+    <Compile Include="MIManage\MI_Register.cs" />
+    <Compile Include="Mongo\EmrPatData.cs" />
+    <Compile Include="OPManage\BusiEntity\PresPrint.cs" />
+    <Compile Include="OPManage\OP_Account.cs" />
+    <Compile Include="OPManage\OP_AccountPatMentInfo.cs" />
+    <Compile Include="OPManage\OP_CostDetail.cs" />
+    <Compile Include="OPManage\OP_CostHead.cs" />
+    <Compile Include="OPManage\OP_CostPayMentInfo.cs" />
+    <Compile Include="OPManage\OP_DocSchedual.cs" />
+    <Compile Include="OPManage\BusiEntity\OP_Enum.cs" />
+    <Compile Include="OPManage\OP_FeeItemDetail.cs" />
+    <Compile Include="OPManage\OP_FeeItemHead.cs" />
+    <Compile Include="OPManage\OP_FeeRefundDetail.cs" />
+    <Compile Include="OPManage\OP_FeeRefundHead.cs" />
+    <Compile Include="OPManage\OP_PatList.cs" />
+    <Compile Include="OPManage\OP_PrintInvoiceInfo.cs" />
+    <Compile Include="OPManage\OP_RegItemFee.cs" />
+    <Compile Include="OPManage\OP_RegType.cs" />
+    <Compile Include="OPManage\BusiEntity\PayMentInfoList.cs" />
+    <Compile Include="OPManage\BusiEntity\Prescription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlAly\SqlOperator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetDir)\$(TargetFileName)" "$(SolutionDir)Output\"
+Copy "$(TargetDir)\$(TargetFileName)" "$(SolutionDir)Output_Client\"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

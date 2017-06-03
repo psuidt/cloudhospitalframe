@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <reportfile>
+    <item filename="test.grf" updatetime="2016-08-17 17:30:16" filepath="" />
+    <item filename="1001.test2.grf" updatetime="2016-08-17 17:03:23" filepath="" />
+    <item filename="2012.化验申请单.grf" updatetime="2016-11-11 09:08:41" filepath="" />
+    <item filename="2013.检查申请单.grf" updatetime="2016-10-24 17:57:29" filepath="" />
+    <item filename="3015.住院护士执行单服药单.grf" updatetime="2016-11-11 15:47:23" filepath="" />
+    <item filename="3016.住院护士执行单输液卡.grf" updatetime="2016-11-11 15:34:04" filepath="" />
+    <item filename="3017.住院护士执行单注射单.grf" updatetime="2016-11-11 12:20:01" filepath="" />
+    <item filename="3018.住院护士执行单治疗卡.grf" updatetime="2016-11-11 12:20:06" filepath="" />
+    <item filename="2016.门诊医生西成药处方.grf" updatetime="2016-11-07 10:41:01" filepath="" />
+    <item filename="3201.长期医嘱打印.grf" updatetime="2016-11-15 17:43:00" filepath="" />
+    <item filename="3203.临时医嘱打印.grf" updatetime="2016-11-16 10:34:05" filepath="" />
+    <item filename="4020.药房口服药统领单.grf" updatetime="2016-11-17 09:20:17" filepath="" />
+    <item filename="4025.药房中草药单.grf" updatetime="2016-11-17 09:36:19" filepath="" />
+    <item filename="4024.药房出院带药单.grf" updatetime="2016-11-17 09:28:53" filepath="" />
+    <item filename="4023.药房处方领药单.grf" updatetime="2016-11-17 09:31:30" filepath="" />
+    <item filename="4022.药房大输液领药单.grf" updatetime="2016-11-17 09:56:28" filepath="" />
+    <item filename="4021.药房针剂领药单.grf" updatetime="2016-11-17 09:26:32" filepath="" />
+    <item filename="6001.医生药品开方统计.grf" updatetime="2016-11-16 16:30:13" filepath="" />
+    <item filename="2020.会员收费小票.grf" updatetime="2016-11-22 17:00:59" filepath="" />
+    <item filename="3003.出院通知单.grf" updatetime="2016-10-14 11:27:36" filepath="" />
+    <item filename="3004.住院结算票据.grf" updatetime="2016-10-14 11:24:53" filepath="" />
+    <item filename="3202.催款单.grf" updatetime="2016-11-15 18:05:13" filepath="" />
+    <item filename="3002.住院预交金缴款表.grf" updatetime="2016-10-14 11:23:58" filepath="" />
+    <item filename="3204.住院预交金交款单.grf" updatetime="2016-11-29 10:08:20" filepath="" />
+    <item filename="6002.医技项目工作量统计.grf" updatetime="2016-11-21 16:37:03" filepath="" />
+    <item filename="2006.门诊收入统计.grf" updatetime="2016-11-08 15:21:07" filepath="" />
+    <item filename="3014.住院收入统计.grf" updatetime="2016-11-08 15:47:20" filepath="" />
+    <item filename="2010.会员充值交款表.grf" updatetime="2016-11-24 11:08:45" filepath="" />
+    <item filename="2001.门诊缴款表.grf" updatetime="2016-10-14 09:37:42" filepath="" />
+    <item filename="3012.住院收入流水账.grf" updatetime="2016-10-14 14:01:21" filepath="" />
+    <item filename="4016.药品进销存报表.grf" updatetime="2016-10-14 13:16:45" filepath="" />
+    <item filename="4017.药品明细账报表.grf" updatetime="2016-11-08 14:33:58" filepath="" />
+    <item filename="5009.物资进销存报表.grf" updatetime="2016-10-14 11:03:24" filepath="" />
+    <item filename="3019.住院护士检验标签.grf" updatetime="2016-11-16 10:54:20" filepath="" />
+    <item filename="2022.门诊化验申请单.grf" updatetime="2016-11-29 14:05:01" filepath="" />
+    <item filename="2002.门诊收费.grf" updatetime="2016-10-14 09:55:47" filepath="" />
+    <item filename="2019.门诊收费费用清单.grf" updatetime="2016-11-22 15:12:33" filepath="" />
+    <item filename="4015.药品流水账.grf" updatetime="2016-11-08 15:30:04" filepath="" />
+    <item filename="2004.门诊收费员工作量统计.grf" updatetime="2016-10-14 14:01:05" filepath="" />
+    <item filename="2028.门诊医生西成药新处方.grf" updatetime="2016-12-27 14:18:13" filepath="" />
+    <item filename="2027.门诊医生中药新处方.grf" updatetime="2016-12-22 11:02:54" filepath="" />
+  </reportfile>
+  <programfile>
+    <item filename="" updatetime="" filepath="">
+    </item>
+  </programfile>
+</root>

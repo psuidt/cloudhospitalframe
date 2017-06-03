@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Publish>
+	<service switch="1" servicename="DistributedCache" explain="分布式缓存服务" pluginname="" controller="" method="" argument=""></service>
+	<service switch="1" servicename="RemotePlugin" explain="远程插件服务" pluginname="" controller="" method="" argument=""></service>
+	<service switch="1" servicename="UpgradeClient" explain="客户端程序升级服务" pluginname="" controller="" method="" argument=""></service>
+	<service switch="1" servicename="MongodbSync" explain="Mongodb数据同步服务" pluginname="" controller="" method="" argument=""></service>
+	<service switch="1" servicename="MiddlewareMonitor" explain="中间件集群监控服务" pluginname="" controller="" method="" argument=""></service>
+	<service switch="1" servicename="TestBooks" explain="获取书籍列表" pluginname="Books.Service" controller="bookWcfController" method="GetBooks" argument=""></service>
+  </Publish>
+  <Subscibe>
+	<service switch="1" servicename="DistributedCache"></service>
+	<service switch="1" servicename="RemotePlugin"></service>
+	<service switch="1" servicename="UpgradeClient"></service>
+	<service switch="1" servicename="MongodbSync"></service>
+	<service switch="0" servicename="TestBooks"></service>
+  </Subscibe>
+</root>

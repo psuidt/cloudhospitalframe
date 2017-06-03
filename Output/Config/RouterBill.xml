@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <record>
+    <hostname>HIS中间件</hostname>
+    <servicetype>业务数据服务</servicetype>
+    <address>net.tcp://192.168.187.17:8811/WCFHandlerService</address>
+    <ContractName>WCFHandlerService</ContractName>
+    <ContractNamespace>http://www.efwplus.cn/WCFHandlerService</ContractNamespace>
+    <plugins>
+      <plugin name="SuperPlugin" title="Books服务插件" replyidentify=""></plugin>
+      <plugin name="Books.Service" title="Books服务插件" replyidentify=""></plugin>
+      <plugin name="MainFrame.Service" title="主框架服务插件" replyidentify=""></plugin>
+      <plugin name="BaseProject.Service" title="基础项目服务" replyidentify="" ></plugin>
+      <plugin name="DrugProject.Service" title="药品物资项目服务" replyidentify="" ></plugin>
+      <plugin name="IPProject.Service" title="住院项目服务" replyidentify="" ></plugin>
+      <plugin name="OPProject.Service" title="门诊项目服务" replyidentify="" ></plugin>
+      <plugin name="MIProject.Service" title="医保接口HIS端服务" replyidentify="" ></plugin>
+      <plugin name="MIService.Service" title="医保接口医院端服务" replyidentify="" ></plugin>
+    </plugins>
+  </record>
+  <record>
+    <hostname>HIS中间件</hostname>
+    <servicetype>文件传输服务</servicetype>
+    <address>net.tcp://127.0.0.1:8882/FileTransferHandlerService</address>
+    <ContractName>FileTransferHandlerService</ContractName>
+    <ContractNamespace>http://www.efwplus.cn/FileTransferHandlerService</ContractNamespace>
+  </record>
+</root>

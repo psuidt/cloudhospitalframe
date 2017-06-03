@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--switch 开关 0:开启/1:关闭-->
+<!--execfrequency 0:每小时一次/1:每天一次/2:每周一次/3:每月一次 -->
+<!--shorttime 执行时间点-->
+<!--serialorparallel 0:串行/1:并行-->
+<!--service 调用对应插件服务-->
+<root>
+  <task name="医嘱自动发送" switch="1" execfrequency="1" shorttime="00:05:00" serialorparallel="1">
+    <service pluginname="IPProject.Service" controller="OrderCheckController" method="AutoSendOrderCheckList" argument="[&quot;[1]&quot;]">
+    </service>
+  </task>
+  <task name="账单自动发送" switch="1" execfrequency="1" shorttime="00:10:00" serialorparallel="1">
+    <service pluginname="IPProject.Service" controller="OrderCheckController" method="AutoSendAccountCheckList" argument="[&quot;[1]&quot;]">
+    </service>
+  </task>
+  <task name="床位费自动发送" switch="1" execfrequency="1" shorttime="00:10:00" serialorparallel="1">
+    <service pluginname="IPProject.Service" controller="OrderCheckController" method="AutoSendBedCheckList" argument="[&quot;[1]&quot;]">
+    </service>
+  </task>
+  <task name="住院每日收入流水自动发送" switch="1" execfrequency="1" shorttime="00:11:00" serialorparallel="1">
+    <service pluginname="IPProject.Service" controller="AccountBookController" method="AutoCostRunninAccount" argument="[&quot;[1]&quot;]">
+    </service>
+  </task>
+  <task name="住院每日预交金流水自动发送" switch="1" execfrequency="1" shorttime="00:11:00" serialorparallel="1">
+    <service pluginname="IPProject.Service" controller="AccountBookController" method="AutoDepositFeeRunninAccount" argument="[&quot;[1]&quot;]">
+    </service>
+  </task>
+  <task name="任务名称" switch="1" execfrequency="0" shorttime="00:15:00" serialorparallel="0">
+    <service pluginname="Books.Service" controller="bookWcfController" method="GetBooks" argument="">
+    </service>
+  </task>
+  <task name="任务名称2" switch="1" execfrequency="0" shorttime="00:15:00" serialorparallel="1">
+    <service pluginname="Books.Service" controller="bookWcfController" method="TestProc" argument="">
+    </service>
+    <service pluginname="Books.Service" controller="bookWcfController" method="GetDiseaseData" argument="">
+    </service>
+    <service pluginname="Books.Service" controller="bookWcfController" method="GetBooks" argument="">
+    </service>
+  </task>
+</root>

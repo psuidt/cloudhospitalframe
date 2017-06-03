@@ -1,0 +1,2060 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EfwControls</name>
+    </assembly>
+    <members>
+        <member name="T:EfwControls.Common.AgeExtend">
+            <summary>
+            年龄扩展类
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.AgeExtend.GetDateTime(EfwControls.Common.AgeValue)">
+            <summary>
+            将年龄转换为出生日期
+            </summary>
+            <param name="age">年龄</param>
+            <returns>出生日期</returns>
+        </member>
+        <member name="M:EfwControls.Common.AgeExtend.GetDateTime(System.String)">
+            <summary>
+            将年龄转换为出生日期
+            </summary>
+            <param name="AgeStrEN">年龄字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.AgeExtend.GetAgeValue(System.DateTime)">
+            <summary>
+            将出生日期转换为年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <returns>年龄</returns>
+        </member>
+        <member name="T:EfwControls.Common.AgeValue">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.AgeValue.#ctor(System.String)">
+            <summary>
+            实列化
+            </summary>
+            <param name="AgeStrEN">如：Y12</param>
+        </member>
+        <member name="M:EfwControls.Common.AgeValue.ReturnAgeStr_CH">
+            <summary>
+            返回汉字年龄格式，如：2岁3月20天
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.AgeValue.ReturnAgeStr_EN">
+            <summary>
+            返回英文存储格式，如：Y2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.Common.AsynProcessing">
+            <summary>
+            异步处理数据
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.ConvertDataExtend.IsNull(System.Object,System.String)">
+            <summary>
+            将Null值转换为指定值
+            </summary>
+            <param name="obj">待判断的值</param>
+            <param name="nValue">指定值</param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.ConvertDataExtend.IsNumeric(System.String)">
+             <summary>
+            判断输入字符串是否为数字
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.ConvertDataExtend.IsInteger(System.String)">
+             <summary>
+            判断输入字符串是否为整数
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="T:EfwControls.Common.CustomConfigManager">
+            <summary>
+            客户端配置文件操作类
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.CustomConfigManager.GetPrintName(System.Int32)">
+            <summary>
+            获取打印机名称
+            </summary>
+            <param name="type">0：打印机（1） 1：打印机（2） 2：打印机（3）</param>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.Common.DESEncryptor">
+            <summary>
+            加密解密
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.inputString">
+            <summary>
+            输入字符串
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.outString">
+            <summary>
+            输出字符串
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.inputFilePath">
+            <summary>
+            输入文件路径
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.outFilePath">
+            <summary>
+            输出文件路径
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.encryptKey">
+            <summary>
+            加密密钥
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.decryptKey">
+            <summary>
+            解密密钥
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.DESEncryptor.noteMessage">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.InputString">
+            <summary>
+            输入字符串
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.OutString">
+            <summary>
+            输出字符串
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.InputFilePath">
+            <summary>
+            输入文件路径
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.OutFilePath">
+            <summary>
+            输出文件路径
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.EncryptKey">
+            <summary>
+            加密密钥
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.DecryptKey">
+            <summary>
+            解密密钥
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.DESEncryptor.NoteMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_encryptkey">加密密匙</param>
+            <param name="_decryptkey">解密密匙</param>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.DesEncrypt">
+            <summary>
+            加密字符串
+            注意:密钥必须为８位
+            </summary>
+            <param name="strText">字符串</param>
+            <param name="encryptKey">密钥</param>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.DesDecrypt">
+            <summary>
+            解密字符串
+            </summary>
+            <param name="this.inputString.inputString">加了密的字符串</param>
+            <param name="decryptKey">密钥</param>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.FileDesEncrypt">
+            <summary>
+            DES加密文件
+            </summary>
+            <param name="this.inputFilePath.inputFilePath">源文件路径</param>
+            <param name="this.outFilePath.outFilePath">输出文件路径</param>
+            <param name="encryptKey">密钥</param>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.FileDesDecrypt">
+            <summary>
+            解密文件
+            </summary>
+            <param name="this.inputFilePath.inputFilePath">加密了的文件路径</param>
+            <param name="this.outFilePath.outFilePath">输出文件路径</param>
+            <param name="decryptKey">密钥</param>
+        </member>
+        <member name="M:EfwControls.Common.DESEncryptor.MD5Encrypt">
+            <summary>
+            MD5 Encrypt
+            </summary>
+            <param name="strText">text</param>
+            <returns>md5 Encrypt string</returns>
+        </member>
+        <member name="T:EfwControls.Common.Licensing.ComponentLicense">
+            <summary>
+            License granted to components.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.Licensing.ComponentLicense.LicenseKey">
+            <summary>
+            Gets the license key granted to this component.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.Licensing.ComponentLicense.IsDemo">
+            <summary>
+            Gets if this component is running in demo mode.
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicense.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new <see cref="T:EfwControls.Common.Licensing.ComponentLicense"/> object.
+            </summary>
+            <param name="licKey">License key to use.</param>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicense.Dispose">
+            <summary>
+            Disposes this object.
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicense.Dispose(System.Boolean)">
+            <summary>
+            Disposes this object.
+            </summary>
+            <param name="disposing">true if the object is disposing.</param>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicense.CreateDemoLicense">
+            <summary>
+            Creates a demo <see cref="T:EfwControls.Common.Licensing.ComponentLicense"/>.
+            </summary>
+            <returns>A demo <see cref="T:EfwControls.Common.Licensing.ComponentLicense"/>.</returns>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicense.CreateLicense(System.String,System.String)">
+            <summary>
+            Attempts to create a new <see cref="T:EfwControls.Common.Licensing.ComponentLicense"/> with the specified key.
+            </summary>
+            <param name="developerKey">Developer Key</param>
+            <returns><see cref="T:EfwControls.Common.Licensing.ComponentLicense"/> with the specified fields set.</returns>
+        </member>
+        <member name="T:EfwControls.Common.Licensing.ComponentLicenseProvider">
+            <summary>
+            Provides Component License Validation
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.Licensing.ComponentLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
+            <summary>
+            Gets a license for an instance or type of component.
+            </summary>
+            <param name="context">A <see cref="T:System.ComponentModel.LicenseContext"/> that specifies where you can use the licensed object.</param>
+            <param name="type">A <see cref="T:System.Type"/> that represents the component requesting the license.</param>
+            <param name="instance">An object that is requesting the license.</param>
+            <param name="allowExceptions">true if a <see cref="T:System.ComponentModel.LicenseException"/> should be thrown when the component cannot be granted a license; otherwise, false.</param>
+            <returns>A valid <see cref="T:System.ComponentModel.License"/>.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EfwControls.Common.Licensing.ComponentLicenseProvider.GetDeveloperKey(System.Type)" -->
+        <member name="T:EfwControls.Common.PageInfo">
+            <summary>
+            分页信息
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PageInfo.pageSize">
+            <summary>
+            页面大小
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PageInfo.pageNo">
+            <summary>
+            要取的页面，默认为0页
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PageInfo.totalPage">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PageInfo.totalRecord">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PageInfo.ColumnLength">
+            <summary>
+            列的长度
+            </summary>
+        </member>
+        <member name="T:EfwControls.Common.PopupControl.Popup">
+            <summary>
+            Represents a pop-up window.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.Content">
+            <summary>
+            Gets the content of the pop-up.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.ShowingAnimation">
+            <summary>
+            Determines which animation to use while showing the pop-up window.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.HidingAnimation">
+            <summary>
+            Determines which animation to use while hiding the pop-up window.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.AnimationDuration">
+            <summary>
+            Determines the duration of the animation.
+            </summary>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.FocusOnOpen">
+            <summary>
+            Gets or sets a value indicating whether the content should receive the focus after the pop-up has been opened.
+            </summary>
+            <value><c>true</c> if the content should be focused after the pop-up has been opened; otherwise, <c>false</c>.</value>
+            <remarks>If the FocusOnOpen property is set to <c>false</c>, then pop-up cannot use the fade effect.</remarks>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.AcceptAlt">
+            <summary>
+            Gets or sets a value indicating whether pressing the alt key should close the pop-up.
+            </summary>
+            <value><c>true</c> if pressing the alt key does not close the pop-up; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.Resizable">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:EfwControls.Common.PopupControl.Popup" /> is resizable.
+            </summary>
+            <value><c>true</c> if resizable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.NonInteractive">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:EfwControls.Common.PopupControl.Popup"></see> acts like a transparent windows (so it cannot be clicked).
+            </summary>
+            <value>
+            <c>true</c> if the popup is noninteractive; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.MinimumSize">
+            <summary>
+            Gets or sets a minimum size of the pop-up.
+            </summary>
+            <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.MaximumSize">
+            <summary>
+            Gets or sets a maximum size of the pop-up.
+            </summary>
+            <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
+        </member>
+        <member name="P:EfwControls.Common.PopupControl.Popup.CreateParams">
+            <summary>
+            Gets parameters of a new window.
+            </summary>
+            <returns>An object of type <see cref="T:System.Windows.Forms.CreateParams" /> used when creating a new window.</returns>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EfwControls.Common.PopupControl.Popup"/> class.
+            </summary>
+            <param name="content">The content of the pop-up.</param>
+            <remarks>
+            Pop-up will be disposed immediately after disposion of the content control.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="content" /> is <code>null</code>.</exception>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripItem.VisibleChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog box key.
+            </summary>
+            <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
+            <returns>
+            true if the key was processed by the control; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.UpdateRegion">
+            <summary>
+            Updates the pop-up region.
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.Show(System.Windows.Forms.Control)">
+            <summary>
+            Shows the pop-up window below the specified control.
+            </summary>
+            <param name="control">The control below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below the specified control, the pop-up control is shown above it.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="control"/> is <code>null</code>.</exception>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.Show(System.Drawing.Rectangle)">
+            <summary>
+            Shows the pop-up window below the specified area.
+            </summary>
+            <param name="area">The area of desktop below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below specified area, the pop-up control is shown above it.
+            </remarks>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.Show(System.Windows.Forms.Control,System.Drawing.Rectangle)">
+            <summary>
+            Shows the pop-up window below the specified area of the specified control.
+            </summary>
+            <param name="control">The control used to compute screen location of specified area.</param>
+            <param name="area">The area of control below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below specified area, the pop-up control is shown above it.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="control"/> is <code>null</code>.</exception>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnSizeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.SizeChanged" /> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnOpening(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opening" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnOpened(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opened" /> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.OnClosed(System.Windows.Forms.ToolStripDropDownClosedEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Closed"/> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.ToolStripDropDownClosedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Processes Windows messages.
+            </summary>
+            <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.ProcessResizing(System.Windows.Forms.Message@)">
+            <summary>
+            Processes the resizing messages.
+            </summary>
+            <param name="m">The message.</param>
+            <returns>true, if the WndProc method from the base class shouldn't be invoked.</returns>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.PaintSizeGrip(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the sizing grip.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.Popup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.Common.PopupControl.Popup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EfwControls.Common.PopupControl.PopupAnimations">
+            <summary>
+            Types of animation of the pop-up window.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.None">
+            <summary>
+            Uses no animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.LeftToRight">
+            <summary>
+            Animates the window from left to right. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.RightToLeft">
+            <summary>
+            Animates the window from right to left. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.TopToBottom">
+            <summary>
+            Animates the window from top to bottom. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.BottomToTop">
+            <summary>
+            Animates the window from bottom to top. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.Center">
+            <summary>
+            Makes the window appear to collapse inward if it is hiding or expand outward if the window is showing.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.Slide">
+            <summary>
+            Uses a slide animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.Blend">
+            <summary>
+            Uses a fade effect.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.Roll">
+            <summary>
+            Uses a roll animation.
+            </summary>
+        </member>
+        <member name="F:EfwControls.Common.PopupControl.PopupAnimations.SystemDefault">
+            <summary>
+            Uses a default animation.
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetConnection">
+            <summary>
+            获取一个未打开连接的SqlConnection对象
+            </summary>
+            <returns>SqlConnection对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetConnection(System.String)">
+            <summary>
+            使用连接字符串获取未打开连接SqlConnection对象
+            </summary>
+            <param name="_connStr">连接字符串</param>
+            <returns>SqlConnection对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetCommand(System.String)">
+            <summary>
+            使用指定的Sql语句创建SqlCommand对象
+            </summary>
+            <param name="sqlStr">Sql语句</param>
+            <returns>SqlCommand对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetCommand(System.String,System.Data.CommandType,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            使用指定的Sql语句,CommandType,SqlParameter数组创建SqlCommand对象
+            </summary>
+            <param name="sqlStr">Sql语句</param>
+            <param name="type">命令类型</param>
+            <param name="paras">SqlParameter数组</param>
+            <returns>SqlCommand对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.ExecuteNoQuery(System.String)">
+            <summary>
+            执行Sql语句返回受影响的行数
+            </summary>
+            <param name="sqlStr">Sql语句</param>
+            <returns>受影响的行数,失败则返回-1</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            使用指定的Sql语句,CommandType,SqlParameter数组执行Sql语句,返回受影响的行数
+            </summary>
+            <param name="sqlStr">Sql语句</param>
+            <param name="type">命令类型</param>
+            <param name="paras">SqlParameter数组</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetDataTable(System.String)">
+            <summary>
+            使用指定Sql语句获取dataTable
+            </summary>
+            <param name="sqlStr">Sql语句</param>
+            <returns>DataTable对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.GetSqlDataReader(System.String)">
+            <summary>
+            使用指定的Sql语句获取SqlDataReader
+            </summary>
+            <param name="sqlStr">sql语句</param>
+            <returns>SqlDataReader对象</returns>
+        </member>
+        <member name="M:EfwControls.Common.SqlDbHelper.ExecuteSqls(System.String[])">
+            <summary>
+            使用事务执行多条Sql语句
+            </summary>
+            <param name="sqlCommands">sql语句数组</param>
+            <returns>全部成功则返回true否则返回false</returns>
+        </member>
+        <member name="T:EfwControls.Common.SqlPage">
+            <summary>
+            SQL语句进行分页包装
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.SqlPage.FormatSql(System.String,EfwControls.Common.PageInfo,System.Func{System.String,System.Int32})">
+            <summary>
+            格式化SQL语句
+            </summary>
+            <param name="strsql"></param>
+            <param name="pageInfo"></param>
+            <param name="oleDb"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.Common.UpgradeFileConfigManager">
+            <summary>
+            升级文件配置管理
+            </summary>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.GetReportUpdateTime(System.String)">
+            <summary>
+            获取报表的更新时间
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.SetReportUpdateTime(System.String,System.DateTime)">
+            <summary>
+            设置报表更新时间
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.GetProgramUpdateTime(System.String,System.String)">
+            <summary>
+            获取程序文件的更新时间
+            </summary>
+            <param name="filename"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.SetProgramUpdateTime(System.String,System.String,System.DateTime)">
+            <summary>
+            设置程序文件的更新时间
+            </summary>
+            <param name="filename"></param>
+            <param name="path"></param>
+            <param name="updatetitme"></param>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.AddReport(System.String,System.DateTime)">
+            <summary>
+            增加报表
+            </summary>
+            <param name="filename"></param>
+            <param name="updatetime"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:EfwControls.Common.UpgradeFileConfigManager.AddProgram(System.String,System.DateTime,System.String)">
+            <summary>
+            增加程序文件
+            </summary>
+            <param name="filename"></param>
+            <param name="updatetime"></param>
+            <param name="path"></param>
+        </member>
+        <member name="F:EfwControls.CustomControl.BaseFormEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.BaseFormEx.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.BaseFormEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.CardDataGrid.HeadDefaultCellStyle">
+            <summary>
+            列表头缺省默认样式
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.CardDataGrid.RowDefaultCellStyle">
+            <summary>
+            列表行缺省默认样式
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.SetColumnHeadDefaultCellStyle(System.Windows.Forms.DataGridViewCellStyle)">
+            <summary>
+            设置表头样式
+            </summary>
+            <param name="dgvCellStyle"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.SetRowDefaultCellStyle(System.Windows.Forms.DataGridViewCellStyle)">
+            <summary>
+            设置行样式
+            </summary>
+            <param name="dgvCellStyle"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.lbl_MouseHover(System.Object,System.EventArgs)">
+            <summary>
+            鼠标在字母上悬停
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.lbl_MouseLeave(System.Object,System.EventArgs)">
+            <summary>
+            鼠标在字母上离开
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.lblDrug_Click(System.Object,System.EventArgs)">
+            <summary>
+            鼠标单击
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.GetIsFocused">
+            <summary>
+            是否本控件获取焦点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:EfwControls.CustomControl.CardDataGrid.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.CardDataGrid.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.OnSelectedEvent(System.Int32)">
+            <summary>
+            选中事件
+            </summary>
+            <param name="rowIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.FormatKeyword(System.String)">
+            <summary>
+            处理查询关键字中的特殊字符
+            </summary>
+            <param name="str">查询关键字</param>
+            <returns></returns>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.pressSpacekey">
+            <summary>
+            处理空白键,全字匹配
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.containerForm">
+            <summary>
+            该控件所在的窗体
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.AddSelectCardToTopForm">
+            <summary>
+            添加到顶级窗口
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.SetSelectionCardLocation">
+            <summary>
+            设置位置
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.GetGridVisibleColumnIndex">
+            <summary>
+            获取选项卡的可见列
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.matchMode">
+            <summary>
+            选项卡的过滤匹配模式
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.ComboShowCard.MatchMode">
+            <summary>
+            获取或设置选项卡的过滤匹配模式
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.queryFields">
+            <summary>
+            获取或设置查询字段
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.displayField">
+            <summary>
+            要显示的字段或属性名
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.ComboShowCard.DisplayField">
+            <summary>
+            获取或设置要显示在控件TextBox内的字段
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.memberField">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.isSetValue">
+            <summary>
+            是否注入值标识,防止赋值的时候循环触发TextChange事件
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.memberValue">
+            <summary>
+            成员值
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.selectedValue">
+            <summary>
+            选中的值
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.ComboShowCard.SelectedValue">
+            <summary>
+            选择的值
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.ComboShowCard.PageTotalRecord">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.ComboShowCard.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.ComboShowCard.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.ForeOrBack">
+            <summary>
+            前景或背景
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.Direction">
+            <summary>
+            方向
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGrid.lines">
+            <summary>
+            要画的线的信息列表
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGrid.allowSortWhenClickColumnHeader">
+            <summary>
+            是否允许点击ColumnHeader排序
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.DrawLines(System.Collections.Generic.List{EfwControls.CustomControl.DataGridViewDrawLineInfo})">
+            <summary>
+            在指定的位置划线
+            </summary>
+            <param name="StartIndex">开始行或列</param>
+            <param name="EndIndex">结束行或列</param>
+            <param name="RowOrColumnIndex">行或列</param>
+            <param name="direct">方向</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.AddLine(EfwControls.CustomControl.DataGridViewDrawLineInfo)">
+            <summary>
+            增加一个线条对象
+            </summary>
+            <param name="Line"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.RemoveLine(EfwControls.CustomControl.DataGridViewDrawLineInfo)">
+            <summary>
+            移除一个线条对象
+            </summary>
+            <param name="Line"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.ClearLines">
+            <summary>
+            清除所有线条
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.SetRowColor(System.Int32,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            设置行颜色
+            </summary>
+            <param name="forceColor">前景色</param>
+            <param name="BackColor">背景色</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.SetRowColor(System.Int32,System.Drawing.Color,System.Boolean)">
+            <summary>
+            设置行颜色
+            </summary>
+            <param name="forceColor">前景色或者背景色</param>
+            <param name="forceColor">指示是否是前景色</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.SetRowColor(System.Int32,System.Drawing.Color,EfwControls.CustomControl.ForeOrBack)">
+            <summary>
+            设置行颜色
+            </summary>
+            <param name="forceColor">前景色</param>
+            <param name="BackColor">背景色</param>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGrid.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DataGrid.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.DataGridViewDrawLineInfo">
+            <summary>
+            网格画线所需的信息
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.startIndexOfRowColumn">
+            <summary>
+            待画线的开始行（列）的索引
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.endIndexOfRowColumn">
+            <summary>
+            带画线的结束行（列）的索引
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.drawLineOfRowColumnIndex">
+            <summary>
+            需要画线的行（列）索引
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.drawDirection">
+            <summary>
+            画线的方向（自左到右 或者 自上到下）
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.index">
+            <summary>
+            线条编号
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.color">
+            <summary>
+            线条颜色
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewDrawLineInfo.width">
+            <summary>
+            线条宽度
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.StartIndexOfRowColumn">
+            <summary>
+            待画线的开始行（列）的索引
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.EndIndexOfRowColumn">
+            <summary>
+            带画线的结束行（列）的索引
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.DrawLineOfRowColumnIndex">
+            <summary>
+            需要画线的行（列）索引
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.DrawDirection">
+            <summary>
+            画线的方向（自左到右 或者 自上到下）
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.Index">
+            <summary>
+            线条编号
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.Color">
+            <summary>
+            线条颜色
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewDrawLineInfo.Width">
+            <summary>
+            线条宽度
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DialogForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.DialogForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.DialogForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.frmForm.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.frmForm.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.frmForm.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.EN_CH">
+            <summary>
+            中英文输入法自动切换
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.frmHotkeys.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.frmHotkeys.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.frmHotkeys.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.editTextBox">
+            <summary>
+            网格编辑框对象
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.pressSpaceKey">
+            <summary>
+            处理空白键,全字匹配
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.editTextBoxKeyPressEventHandler">
+            <summary>
+            网格编辑文本框按键事件
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.editTextBoxTextChangeEventHandler">
+            <summary>
+            网格编辑文本框值改变事件
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.cardDataGrids">
+            <summary>
+            选项卡
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.numKeyBoard">
+            <summary>
+            数字键盘
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.FormatKeyword(System.String)">
+            <summary>
+            处理查询关键字中的特殊字符
+            </summary>
+            <param name="str">查询关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.GetSelectCardVisableColumnIndex(System.Windows.Forms.DataGridView)">
+            <summary>
+            获取选择卡第一个可见列的索引
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.GetBindSelectionCardIndex(System.Int32)">
+            <summary>
+            绑定了选项卡的索引
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.GetReturnValue(EfwControls.CustomControl.CardDataGrid)">
+            <summary>
+            获取返回值
+            </summary>
+            <param name="grdSelectCard"></param>
+            <param name="dataSourceIsDataTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.GetNextVisableEditColumnIndex(System.Int32,System.Int32)">
+            <summary>
+            获取指定行的下一个可见的，可编辑列
+            </summary>
+            <param name="currentColumnIndex"></param>
+            <param name="rowIndex"></param>
+            <remarks>如果是最后一行，则返回-1，调用程序需要自己处理是否增加行</remarks>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.GetGridVisibleFirstColumnIndex">
+            <summary>
+            获取网格第一个可见列的索引
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.ColumnJumpControl(System.Int32,System.Int32)">
+            <summary>
+            跳转控制
+            </summary>
+            <param name="columnIndex">当前列索引</param>
+            <param name="rowIndex">当前行索引</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.SetSelectCardLocation(System.Int32,EfwControls.CustomControl.CardDataGrid)">
+            <summary>
+            设置选择卡位置
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.ColumnIsBindSelectionCard(System.Int32,System.Int32@)">
+            <summary>
+            判断指定的列是否绑定了选项卡
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.hideSelectionCardWhenCustomInput">
+            <summary>
+            当自定输入的时候隐藏选项卡
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridBoxCard.selectionCards">
+            <summary>
+            绑定的选项卡数组
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.AddRow">
+            <summary>
+            给Gird新增一行
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.AddRow(EfwControls.CustomControl.UserAddGridRowCustom)">
+            <summary>
+            给Gird新增一行
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.SetExpress(System.Collections.Generic.Dictionary{System.String,System.String},System.Data.DataTable)">
+            <summary>
+            给网格数据源设置正则表达式
+            </summary>
+            <param name="dicExpress">正则表达式(列名+表达式)</param>
+            <param name="dtSource">数据源</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridBoxCard.CheckDetails(System.Data.DataTable,System.Collections.Generic.List{System.Int32},System.String[],System.String@,System.String@,System.Int32@)">
+            <summary>
+            检查网格
+            </summary>
+            <param name="dtSource">数据源</param>
+            <param name="checkRows">检查行(为空表全部)</param>
+            <param name="uniqueCol">唯一列名(为空则没有主键)</param>
+            <param name="errMsg">错误信息</param>
+            <param name="errCol">错误列名</param>
+            <param name="errRow">错误行索引</param>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.CustomControl.GridDesignReport">
+            <summary>
+            Grid报表设计器
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridDesignReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridDesignReport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridDesignReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.GridDisplayReport.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridDisplayReport.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridDisplayReport.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.ReportTool">
+            <summary>
+            报表工具
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.ReportTool.GetReport(System.Int32,System.Int32,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.DataTable)">
+            <summary>
+            填充数据，获取报表
+            </summary>
+            <param name="workId">机构ID</param>
+            <param name="reportNo">报表的编码</param>
+            <param name="printerIndex">打印机索引</param>
+            <param name="para">报表参数</param>
+            <param name="datasource">报表数据源</param>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.CustomControl.ReportTool.GetReport(System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object},System.Data.DataTable)">
+            <summary>
+            填充数据，获取报表
+            </summary>
+            <param name="reportFile">报表文件</param>
+            <param name="printerIndex">打印机索引</param>
+            <param name="para">报表参数</param>
+            <param name="datasource">报表数据源</param>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.CustomControl.GridReport">
+            <summary>
+            报表打印预览工具
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridReport.PrintPreview(System.Boolean)">
+            <summary>
+            预览
+            </summary>
+            <param name="ShowModal"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridReport.Print(System.Boolean)">
+            <summary>
+            打印
+            </summary>
+            <param name="ShowModal"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridReport.AddParamToReport(gregn6Lib.IGridppReport,System.Object)">
+            <summary>
+            将 对象 的属性数据转储到 Grid++Report 的参数中
+            </summary>
+            <param name="Report"></param>
+            <param name="obj"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridReport.AddParamToReport(gregn6Lib.IGridppReport,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            将 字典数据转储到 Grid++Report 的参数中
+            </summary>
+            <param name="Report"></param>
+            <param name="obj"></param>
+        </member>
+        <member name="M:EfwControls.CustomControl.GridReport.FillRecordToReport(gregn6Lib.IGridppReport,System.Data.DataTable)">
+            <summary>
+            将 DataTable 的数据转储到 Grid++Report 的网格中
+            </summary>
+            <param name="Report"></param>
+            <param name="dt"></param>
+        </member>
+        <member name="F:EfwControls.CustomControl.MultiSelectText.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.MultiSelectText.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.MultiSelectText.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.NumericKeyBoard.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.NumericKeyBoard.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.NumericKeyBoard.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.Pager">
+            <summary>
+            分页控件呈现
+            两种分页模式：
+            1.传入全部数据，控件本身对数据进行分页
+            2.只传入一页的数据和总记录数，传出PageNo和PageSize
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.Pager._pageSizeType">
+            <summary>
+            每页显示记录数
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.Pager.PageSizeType">
+            <summary>
+            每页显示记录数
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.Pager.pageSize">
+            <summary>
+            页面大小
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.Pager.pageNo">
+            <summary>
+            要取的页面，默认为1页
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.Pager.totalRecord">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.Pager.totalPage">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.Pager.isPage">
+            <summary>
+            是否内部分页
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.Pager.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.Pager.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.Pager.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.Popup">
+            <summary>
+            弹出面板
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.Popup.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.Popup.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.Popup.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.MatchModes">
+            <summary>
+            匹配模式
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.MatchModes.ByAnyString">
+            <summary>
+            任意字符
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.MatchModes.ByFirstChar">
+            <summary>
+            按首字符
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.PagerTextEventHandler">
+            <summary>
+            翻页事件
+            </summary>
+            <param name="sender">对象</param>
+            <param name="pageNo">当前页</param>
+            <param name="pageSize">页大小</param>
+        </member>
+        <member name="T:EfwControls.CustomControl.OnSelectCardRowSelectedHandle">
+            <summary>
+            DataGridViewEx中的选项卡选中行后的事件委托
+            </summary>
+            <param name="SelectedValue"></param>
+            <param name="stop">停止跳转</param>
+            <param name="customNextColumnIndex">跳转到指定列</param>
+        </member>
+        <member name="T:EfwControls.CustomControl.PagerGridEventHandler">
+            <summary>
+            翻页事件
+            </summary>
+            <param name="sender">对象</param>
+            <param name="index">ShowCard数据源索引</param>
+            <param name="pageNo">当前页</param>
+            <param name="pageSize">页大小</param>
+        </member>
+        <member name="T:EfwControls.CustomControl.UserAddGirdRowHandler">
+            <summary>
+            自动新增一行时给dataRow赋值
+            </summary>
+            <param name="dataRow">新增一行赋值</param>
+        </member>
+        <member name="T:EfwControls.CustomControl.UserAddGridRowCustom">
+            <summary>
+             自动新增一行自定义规则
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EfwControls.CustomControl.OnDataGridViewCellPressEnterKeyHandle">
+            <summary>
+            单元格回车事件
+            </summary>
+            <param name="sender"></param>
+            <param name="colIndex">当前列号</param>
+            <param name="rowIndex">当前行号</param>
+            <param name="jumpStop">停止跳转</param>
+        </member>
+        <member name="T:EfwControls.CustomControl.DataGridViewSelectionCard">
+            <summary>
+            网格选项卡类
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.ShowCardColumns">
+            <summary>
+            选择卡列信息
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.DataSource">
+            <summary>
+            选择卡数据源
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.CardSize">
+            <summary>
+            选择卡大小
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.QueryFieldsString">
+            <summary>
+            设置查询字段,通过“,”分割
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.DataGridViewSelectionCard.queryFields">
+            <summary>
+            获取或设置查询字段
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.SelectCardFilterType">
+            <summary>
+            选择卡记录过滤方式
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.BindColumnIndex">
+            <summary>
+            获取或设置选项卡要绑定到的列的索引
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionCard.PageTotalRecord">
+            <summary>
+            总记录数 IsPage=false时才使用
+            </summary>
+        </member>
+        <member name="T:EfwControls.CustomControl.DataGridViewSelectionNumericKeyBoard">
+            <summary>
+            网格数字键盘
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.DataGridViewSelectionNumericKeyBoard.BindColumnIndex">
+            <summary>
+            获取或设置选项卡要绑定到的列的索引
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.StatDateTime.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.StatDateTime.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.CustomControl.StatDateTime.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:EfwControls.CustomControl.TextBoxCard.FormatKeyword(System.String)">
+            处理查询关键字中的特殊字符
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.matchMode">
+            <summary>
+            选项卡的过滤匹配模式
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.MatchMode">
+            <summary>
+            获取或设置选项卡的过滤匹配模式
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.queryFields">
+            <summary>
+            获取或设置查询字段
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.QueryFieldsString">
+            <summary>
+            设置查询字段,通过“,”分割
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.displayField">
+            <summary>
+            要显示的字段或属性名
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.DisplayField">
+            <summary>
+            获取或设置要显示在控件TextBox内的字段
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.HeadDefaultCellStyle">
+            <summary>
+            网格控件列样式
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.RowDefaultCellStyle">
+            <summary>
+            网格控件行样式
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.memberField">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.isSetValue">
+            <summary>
+            是否注入值标识,防止赋值的时候循环触发TextChange事件
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.memberValue">
+            <summary>
+            成员值
+            </summary>
+        </member>
+        <member name="F:EfwControls.CustomControl.TextBoxCard.selectedValue">
+            <summary>
+            选中的值
+            </summary>
+        </member>
+        <member name="P:EfwControls.CustomControl.TextBoxCard.SelectedValue">
+            <summary>
+            选择的值
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.BedCard.Controls.BedCardControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.BedCard.Controls.BedCardControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.HISControl.BedCard.Controls.BedCardControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.BedCard.Controls.ButtonState">
+            <summary>
+            按钮状态
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate">
+            <summary>
+            异步支付方式计算
+            </summary>
+        </member>
+        <member name="P:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate.PatListID">
+            <summary>
+            病人ID
+            </summary>
+        </member>
+        <member name="P:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate.PatType">
+            <summary>
+            病人类型
+            </summary>
+        </member>
+        <member name="P:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate.FeeIDs">
+            <summary>
+            费用ID
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate.FavorableCalculate(System.String@,EfwControls.HISControl.UCPayMode.PAY_PROCSTEP@)">
+            <summary>
+            优惠计算
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.AsynPaymentCalculate.MedicalinsuranceCalculate(System.String@,EfwControls.HISControl.UCPayMode.PAY_PROCSTEP@)">
+            <summary>
+            医保计算
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.InitUCPayModeControl(System.Int32,System.Windows.Forms.FlowLayoutPanel,System.Int32,System.Int32)">
+            <summary>
+            第一步：创建支付方式对象
+            </summary>
+            <param name="WorkID">医疗机构ID</param>
+            <param name="flpPayCtrl">支付对象容器</param>
+            <param name="iPatType">病人类型</param>
+            <param name="iUseType">病人来源: 0-门诊 1-住院</param>
+            <param name="totalFee">处方金额</param>
+            <param name="zyDepositFee">住院预交金</param>
+            <param name="_setFeeValue">回调返回金额</param>
+            <returns>支付方式个数</returns>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.StartExecPay(System.Decimal,System.Decimal,EfwControls.HISControl.UCPayMode.AsynPaymentCalculate,EfwControls.HISControl.UCPayMode.SetFeeValueDelegate,System.Boolean)">
+            <summary>
+            第二步：创建控件后开始计算支付金额
+            </summary>
+            <param name="totalFee">总金额</param>
+            <param name="zyDepositFee">预交金总额</param>
+            <param name="_paymentCalculate">支付方式计算</param>
+            <param name="_setFeeValue">显示支付金额</param>
+            <param name="_defaultCash">现金项默认</param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.CashFocus">
+            <summary>
+            现金获取焦点
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.SetCashValue(System.Decimal)">
+            <summary>
+            给现金字段赋值
+            </summary>
+            <param name="val">金额</param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.StartPay(EfwControls.HISControl.UCPayMode.PAY_THREAD@,EfwControls.HISControl.UCPayMode.PayMethod_Config)">
+            <summary>
+            开始执行后台支付
+            </summary>
+            <param name="paythread">支付方式线程</param>
+            <returns>开始支付是否成功</returns>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.AddPayThread(EfwControls.HISControl.UCPayMode.PAY_THREAD)">
+            <summary>
+            添加线程到队列
+            </summary>
+            <param name="paythread"></param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.GetPayThreadInfo(System.Int32)">
+            <summary>
+            根据支付ID号，取得支付线程信息
+            </summary>
+            <param name="PayMethodID">支付方式ID</param>
+            <returns>返回支付线程结构信息</returns>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostPayManager.GetPatientPayMethodConfig(System.Int32,EfwControls.HISControl.UCPayMode.PAY_USERTYPE)">
+            <summary>
+            根据病人身份信息，取得结算方式
+            </summary>
+            <param name="iPatType">病人身份</param>
+            <param name="iUseType">病人来源: 0-门诊 1-住院</param>
+            <returns>符合条件的记录</returns>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.CostFeeStyle">
+            <summary>
+            结算金额分类情况
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostFeeStyle.FeeRoun(System.Decimal,System.Decimal@,System.Decimal@)">
+            <summary>
+            计算四舍五入或者凑整处理
+            </summary>
+            <param name="TotalAmt">总金额</param>
+            <param name="o_FinalPayAmt">转换后的总额</param>
+            <param name="o_Difference">转换后的差额</param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.CostFeeStyle.ChangeFeeRoun(System.Decimal,System.Decimal@,System.Decimal@)">
+            <summary>
+            计算四舍五入或者凑整处理
+            </summary>
+            <param name="TotalAmt">找零金额</param>
+            <param name="o_FinalPayAmt">转换后的总额</param>
+            <param name="o_Difference">转换后的差额</param>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PayModeFee">
+            <summary>
+            支付方式数据
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PAY_USERTYPE">
+            <summary>
+            支付用户类型
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_USERTYPE.puOutPatient">
+            <summary>
+            门诊支付类型
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_USERTYPE.puInPatient">
+            <summary>
+            住院支付类型
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PAY_FEE_FROM">
+            <summary>
+            支付金额来源
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_FEE_FROM.pffManualInput">
+            <summary>
+            手工输入
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_FEE_FROM.pffAutoCalculate">
+            <summary>
+            自动计算支付金额
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PAY_PROCSTEP">
+            <summary>
+            支付方式步骤
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_PROCSTEP.ppsHandFinsed">
+            <summary>
+            手动完成
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_PROCSTEP.ppsAutoFinshed">
+            <summary>
+            自动完成
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PayMethod_Config">
+            <summary>
+            支付方式结构
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.PayMethodID">
+            <summary>
+            支付方式ID
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.PatientType">
+            <summary>
+            病人来源: 0-门诊 1-住院
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.OrderNum">
+            <summary>
+            支持优先顺序
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.PayMethodName">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.InputFrom">
+            <summary>
+            金额来源  0--手工输入  1-自动计算支付金额
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.RuleExplain">
+            <summary>
+            支付规则描述:										
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.FontColor">
+            <summary>
+            字体显示颜色
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PayMethod_Config.Handle">
+            <summary>
+            凑整费
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.FrmSettlementPanel2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.FrmSettlementPanel2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.FrmSettlementPanel2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EfwControls.HISControl.UCPayMode.PAY_THREAD">
+            <summary>
+            支付线程类
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.paymentCalculate">
+            <summary>
+            异步计算
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.PayMethodID">
+            <summary>
+            支付方式ID
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.InputFrom">
+            <summary>
+            金额来源
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.PayFee">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.TicketNo">
+            <summary>
+            支付凭证号
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.Handle">
+            <summary>
+            接收消息的窗口句柄
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.Succeed">
+            <summary>
+            是否支付成功
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.ProcStep">
+            <summary>
+            支付步骤 0--未处理  1--开始支付  2--取支付结果  9--试算完成  10--支付完成  11--取消支付
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.LastErrorMessage">
+            <summary>
+            最后操作描述信息
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.PAY_THREAD.PayThread">
+            <summary>
+            执行支付的线程对象
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.PAY_THREAD.ExecAutoDataItfPay">
+            <summary>
+            全自动数据接口支付线程函数
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.PAY_THREAD.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="P:EfwControls.HISControl.UCPayMode.UCPayMode2.PayValue">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="P:EfwControls.HISControl.UCPayMode.UCPayMode2.TicketNo">
+            <summary>
+            票据号
+            </summary>
+        </member>
+        <member name="F:EfwControls.HISControl.UCPayMode.UCPayMode2.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.UCPayMode2.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:EfwControls.HISControl.UCPayMode.UCPayMode2.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:EfwControls.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.close">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.PatientFemale">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.PatientMale">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.体温单">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.医嘱">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.检查">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.特殊治疗">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:EfwControls.Properties.Resources.病案首页">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="F:EfwControls.WebBrowser.FrmWebBrowser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EfwControls.WebBrowser.FrmWebBrowser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EfwControls.WebBrowser.FrmWebBrowser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

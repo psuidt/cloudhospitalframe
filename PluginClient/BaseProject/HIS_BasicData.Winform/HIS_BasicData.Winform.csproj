@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58C0B583-D6B4-408F-AFAF-D095706606DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIS_BasicData.Winform</RootNamespace>
+    <AssemblyName>HIS_BasicData.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="EFWCoreLib.CoreFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.CoreFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WcfFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WcfFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WinformFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WinformFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_Entity">
+      <HintPath>..\..\..\Output\HIS_Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="HIS_PublicManage">
+      <HintPath>..\..\..\Output\HIS_PublicManage.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AttachAdviceController.cs" />
+    <Compile Include="Controller\ChannelController.cs" />
+    <Compile Include="Controller\EntrustController.cs" />
+    <Compile Include="Controller\ExecBillController.cs" />
+    <Compile Include="Controller\FrequencyController.cs" />
+    <Compile Include="Controller\HospFeeItemManageController.cs" />
+    <Compile Include="Controller\MessageManageController.cs" />
+    <Compile Include="Controller\MessageSubscribeController.cs" />
+    <Compile Include="Controller\MsgTypeManageController.cs" />
+    <Compile Include="Controller\OneKeySubscribeMsgController.cs" />
+    <Compile Include="Controller\ParameterController.cs" />
+    <Compile Include="Controller\PaymentController.cs" />
+    <Compile Include="Controller\ReportConfigureController.cs" />
+    <Compile Include="Controller\ReportController.cs" />
+    <Compile Include="Controller\StatItemController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controller\EmpController.cs" />
+    <Compile Include="Controller\DeptController.cs" />
+    <Compile Include="Controller\WardController.cs" />
+    <Compile Include="Controller\ExamItemController.cs" />
+    <Compile Include="Controller\WorkerController.cs" />
+    <Compile Include="Controller\FeeItemController.cs" />
+    <Compile Include="IView\Channel\IFrmChannel.cs" />
+    <Compile Include="IView\Channel\IFrmExecBill.cs" />
+    <Compile Include="IView\Dept\IFrmDept.cs" />
+    <Compile Include="IView\Dept\IFrmRels.cs" />
+    <Compile Include="IView\Dept\IFrmWard.cs" />
+    <Compile Include="IView\Employee\IFrmRelWards.cs" />
+    <Compile Include="IView\Employee\IFrmRelDepts.cs" />
+    <Compile Include="IView\Employee\IFrmEmp.cs" />
+    <Compile Include="IView\Entrust\IFrmAttachAdvice.cs" />
+    <Compile Include="IView\Entrust\IFrmEntrust.cs" />
+    <Compile Include="IView\ExamItem\IFrmExamItem.cs" />
+    <Compile Include="IView\FeeItem\IFrmFeeItem.cs" />
+    <Compile Include="IView\FeeItem\IHospFeeItemManage.cs" />
+    <Compile Include="IView\Frequency\IFrmFrequency.cs" />
+    <Compile Include="IView\IfrmParameter.cs" />
+    <Compile Include="IView\IFrmReportConfigure.cs" />
+    <Compile Include="IView\IfrmReportManager.cs" />
+    <Compile Include="IView\ItemManage\IfrmAddStatItem.cs" />
+    <Compile Include="IView\ItemManage\IfrmCenterStatItem.cs" />
+    <Compile Include="IView\ItemManage\IfrmDetailClass.cs" />
+    <Compile Include="IView\ItemManage\IfrmStatItem.cs" />
+    <Compile Include="IView\MessageManage\IMessageManage.cs" />
+    <Compile Include="IView\MessageManage\IMessageSubscribe.cs" />
+    <Compile Include="IView\MessageManage\IMsgTypeManage.cs" />
+    <Compile Include="IView\MessageManage\IOneKeySubscribeMsg.cs" />
+    <Compile Include="IView\Payment\IfrmPaymentMgr.cs" />
+    <Compile Include="IView\Payment\IfrmPaymentRel.cs" />
+    <Compile Include="IView\User\IFrmRelGroups.cs" />
+    <Compile Include="IView\User\IFrmUser.cs" />
+    <Compile Include="IView\Worker\IFrmWorker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewForm\Channel\FrmChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Channel\FrmChannel.Designer.cs">
+      <DependentUpon>FrmChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Channel\FrmExecBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Channel\FrmExecBill.Designer.cs">
+      <DependentUpon>FrmExecBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmDept.Designer.cs">
+      <DependentUpon>FrmDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmRelEmps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmRelEmps.Designer.cs">
+      <DependentUpon>FrmRelEmps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmRelDepts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmRelDepts.Designer.cs">
+      <DependentUpon>FrmRelDepts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmWard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Dept\FrmWard.Designer.cs">
+      <DependentUpon>FrmWard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmEmp.Designer.cs">
+      <DependentUpon>FrmEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmRelWard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmRelWard.Designer.cs">
+      <DependentUpon>FrmRelWard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmRelDepts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Employee\FrmRelDepts.Designer.cs">
+      <DependentUpon>FrmRelDepts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Entrust\FrmAttachAdvice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Entrust\FrmAttachAdvice.Designer.cs">
+      <DependentUpon>FrmAttachAdvice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Entrust\FrmEntrust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Entrust\FrmEntrust.Designer.cs">
+      <DependentUpon>FrmEntrust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ExamItem\FrmExamItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ExamItem\FrmExamItem.Designer.cs">
+      <DependentUpon>FrmExamItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\FrmFeeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\FrmFeeItem.Designer.cs">
+      <DependentUpon>FrmFeeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\frmHospFeeItemManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\frmHospFeeItemManage.Designer.cs">
+      <DependentUpon>frmHospFeeItemManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\FrmRelFeeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FeeItem\FrmRelFeeItem.Designer.cs">
+      <DependentUpon>FrmRelFeeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Frequency\FrmFrequency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Frequency\FrmFrequency.Designer.cs">
+      <DependentUpon>FrmFrequency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmParameter.Designer.cs">
+      <DependentUpon>FrmParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportConfigure.Designer.cs">
+      <DependentUpon>FrmReportConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportManager.Designer.cs">
+      <DependentUpon>FrmReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmAddStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmAddStatItem.Designer.cs">
+      <DependentUpon>FrmAddStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmCenterStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmCenterStatItem.Designer.cs">
+      <DependentUpon>FrmCenterStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmDetailClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmDetailClass.Designer.cs">
+      <DependentUpon>FrmDetailClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmStatItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ItemManage\FrmStatItem.Designer.cs">
+      <DependentUpon>FrmStatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmMessageManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmMessageManage.Designer.cs">
+      <DependentUpon>FrmMessageManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmMessageSubscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmMessageSubscribe.Designer.cs">
+      <DependentUpon>FrmMessageSubscribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmOneKeySubscribeMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\FrmOneKeySubscribeMsg.Designer.cs">
+      <DependentUpon>FrmOneKeySubscribeMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\MsgTypeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageManage\MsgTypeManage.Designer.cs">
+      <DependentUpon>MsgTypeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\PaymentMethodManage\FrmPaymentMethodManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\PaymentMethodManage\FrmPaymentMethodManage.Designer.cs">
+      <DependentUpon>FrmPaymentMethodManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\PaymentMethodManage\FrmpaymentMethodRelations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\PaymentMethodManage\FrmpaymentMethodRelations.Designer.cs">
+      <DependentUpon>FrmpaymentMethodRelations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\User\FrmRelGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\User\FrmRelGroups.Designer.cs">
+      <DependentUpon>FrmRelGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\User\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\User\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Worker\FrmWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\Worker\FrmWorker.Designer.cs">
+      <DependentUpon>FrmWorker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewForm\Channel\FrmChannel.resx">
+      <DependentUpon>FrmChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Channel\FrmExecBill.resx">
+      <DependentUpon>FrmExecBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Dept\FrmDept.resx">
+      <DependentUpon>FrmDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Dept\FrmRelEmps.resx">
+      <DependentUpon>FrmRelEmps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Dept\FrmRelDepts.resx">
+      <DependentUpon>FrmRelDepts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Dept\FrmWard.resx">
+      <DependentUpon>FrmWard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Employee\FrmEmp.resx">
+      <DependentUpon>FrmEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Employee\FrmRelWard.resx">
+      <DependentUpon>FrmRelWard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Employee\FrmRelDepts.resx">
+      <DependentUpon>FrmRelDepts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Entrust\FrmAttachAdvice.resx">
+      <DependentUpon>FrmAttachAdvice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Entrust\FrmEntrust.resx">
+      <DependentUpon>FrmEntrust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ExamItem\FrmExamItem.resx">
+      <DependentUpon>FrmExamItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FeeItem\FrmFeeItem.resx">
+      <DependentUpon>FrmFeeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FeeItem\frmHospFeeItemManage.resx">
+      <DependentUpon>frmHospFeeItemManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FeeItem\FrmRelFeeItem.resx">
+      <DependentUpon>FrmRelFeeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Frequency\FrmFrequency.resx">
+      <DependentUpon>FrmFrequency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmParameter.resx">
+      <DependentUpon>FrmParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmReportConfigure.resx">
+      <DependentUpon>FrmReportConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmReportManager.resx">
+      <DependentUpon>FrmReportManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ItemManage\FrmAddStatItem.resx">
+      <DependentUpon>FrmAddStatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ItemManage\FrmCenterStatItem.resx">
+      <DependentUpon>FrmCenterStatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ItemManage\FrmDetailClass.resx">
+      <DependentUpon>FrmDetailClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ItemManage\FrmStatItem.resx">
+      <DependentUpon>FrmStatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\MessageManage\FrmMessageManage.resx">
+      <DependentUpon>FrmMessageManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\MessageManage\FrmMessageSubscribe.resx">
+      <DependentUpon>FrmMessageSubscribe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\MessageManage\FrmOneKeySubscribeMsg.resx">
+      <DependentUpon>FrmOneKeySubscribeMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\MessageManage\MsgTypeManage.resx">
+      <DependentUpon>MsgTypeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\PaymentMethodManage\FrmPaymentMethodManage.resx">
+      <DependentUpon>FrmPaymentMethodManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\PaymentMethodManage\FrmpaymentMethodRelations.resx">
+      <DependentUpon>FrmpaymentMethodRelations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\User\FrmRelGroups.resx">
+      <DependentUpon>FrmRelGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\User\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\Worker\FrmWorker.resx">
+      <DependentUpon>FrmWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\基础框架\EfwControls\EfwControls.csproj">
+      <Project>{a7618987-492b-4d5d-92c2-0381ec45817f}</Project>
+      <Name>EfwControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>MD $(SolutionDir)Output_Client\ModulePlugin\BaseProject\dll
+Copy "$(TargetDir)\$(TargetFileName)" "$(SolutionDir)Output_Client\ModulePlugin\BaseProject\dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

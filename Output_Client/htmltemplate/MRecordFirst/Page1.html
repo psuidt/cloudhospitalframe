@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+	<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="$path/component/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="$path/Temperature/template.css" rel="stylesheet">
+    
+    
+    <script src="$path/component/bootstrap-3.3.4-dist/js/jquery.min.js"></script>
+    <script src="$path/component/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="$path/component/bootstrap-3.3.4-dist/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="$path/component/jquery-easyui-1.4.1/themes/bootstrap/easyui.css">
+	<link rel="stylesheet" type="text/css" href="$path/component/jquery-easyui-1.4.1/themes/icon.css">
+	<script type="text/javascript" src="$path/component/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="$path/component/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+	
+	<script type="text/javascript" src="$path/component/jquery.json-2.3.min.js"></script>
+	
+	<script type="text/javascript" src="$path/MRecordFirst/Page1.js"></script>
+    <style>
+		.container {
+		  width:756px;height:1086px;	  
+		}
+		.shouye_top{padding-top:20px; font-size:15px;}
+		.shouye_title
+		{
+			text-align:center;font-size:25px;
+		}
+
+		.shouye_head
+		{
+			 padding-left:12px;
+		}
+
+		.shouye_left{padding-left:5px;}
+		.shouye_underline
+		{
+			text-decoration:underline;
+			color:Blue;
+		}
+		.shouye_content
+		{
+			text-align:center;
+		}
+
+		.shouye_table tr
+		{
+		 height:37px;
+		}
+		.shouye_baseinfo{padding-left:5px; padding-right:5px;}
+		
+		.head_table{ width:100%;}
+		.head_table table{}
+		.head_table tr{ height:28px; }
+		
+		.out_table{ width:100%}
+		.out_table table{border-left:1px solid;border-top:1px solid;border-right:1px solid;}
+		.out_table td{}
+		
+		.sy_table{ width:100%;font-size:12px;}
+		.sy_table table{}
+		.sy_table tr{ height:28px; }
+		.sy_table td{}
+		
+		.sy_table1{ width:100%;font-size:12px;text-align:center;}
+		.sy_table1 td{border:1px solid;}
+		.sy_table1 tr{ height:28px; }
+		
+		.sy_table2{ width:100%;font-size:12px;}
+		.sy_table2 tr{ height:28px; border:1px solid;}
+		.sy_table2 td{}
+
+		input{line-height:normal;border:0;border-bottom: black 1px solid;background:transparent;}
+		
+		@media print{
+			.noprint {DISPLAY: none;} 
+		    .pageprint {position:static;left:0;top:0;page-break-after: always;}
+	    }
+	</style>
+  </head>
+
+  <body>
+    <div class="container pageprint">
+		<div class="shouye_top">
+		  <span style="padding-left:50px;">广洲市妇幼保健院</span><span style="padding-left:200px;">(卫生机构(组织)代码：45588148-1xx)</span>
+		</div>
+		<div class="shouye_title">
+		  <span>住&nbsp;&nbsp;院&nbsp;&nbsp;病&nbsp;&nbsp;案&nbsp;&nbsp;首&nbsp;&nbsp;页</span>
+		</div>
+		<form id="sy_form" method="post">
+        <div class="shouye_head">
+            <table class="head_table"><tr>
+			<td style="width:25%">医疗付费方式：<span class="shouye_underline">全自费</span></td>
+			<td style="width:25%">健康卡号：<span class="shouye_underline">无</span></td>
+			<td style="width:25%">第&nbsp;&nbsp;1&nbsp;&nbsp;次住院</td>
+			<td style="width:25%">病案号：<span class="shouye_underline">125558</span></td>
+			</tr></table>
+        </div>
+        <div class="shouye_baseinfo">
+			<table class="out_table" border="0" cellspacing="0" cellpadding="0">
+			<tr><td>
+				<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><span class="shouye_left">姓名：<span class="shouye_underline">张三句</span></span></td>
+						<td><span class="shouye_left">性别：<span class="shouye_underline">1.男</span></span></td>
+						<td><span class="shouye_left">出生日期：<span class="shouye_underline">1984年04月03日</span></span></td>
+						<td><span class="shouye_left">年龄：<span class="shouye_underline">Y31</span>(Y/M/D)</span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">国籍：<span class="shouye_underline">中国</span></span></td>
+						<td><span class="shouye_left">民族：<span class="shouye_underline">汉族</span></span></td>
+						<td><span class="shouye_left">新生儿出生体重：<span class="shouye_underline">3000</span>克</span></td>
+						<td><span class="shouye_left">新生儿入院体重：<span class="shouye_underline">-</span>克</span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">出生地：<span class="shouye_underline">广东省广州市海珠区</span></span></td>
+						<td colspan="2"><span class="shouye_left">籍贯：<span class="shouye_underline">广东省广州市</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">身份证：<span class="shouye_underline">441887391828187483</span></span></td>
+						<td><span class="shouye_left">职业：<span class="shouye_underline">职员</span></span></td>
+						<td><span class="shouye_left">婚姻：<span class="shouye_underline">2.已</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">现住址：<span class="shouye_underline">广东省广州市海珠区英城镇余光路123号</span></span></td>
+						<td><span class="shouye_left">电话：<span class="shouye_underline">18872657162</span></span></td>
+						<td><span class="shouye_left">邮政编码：<span class="shouye_underline">513000</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="3"><span class="shouye_left">户口地址：<span class="shouye_underline">广东省广州市海珠区英城镇余光路123号</span></span></td>
+						<td><span class="shouye_left">邮政编码：<span class="shouye_underline">513000</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">工作单位及地址：<span class="shouye_underline">广东省广州市海珠区英城镇余光路123号</span></span></td>
+						<td><span class="shouye_left">电话：<span class="shouye_underline">18872657162</span></span></td>
+						<td><span class="shouye_left">邮政编码：<span class="shouye_underline">513000</span></span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">联系人姓名：<span class="shouye_underline">聚划算</span></span></td>
+						<td><span class="shouye_left">关系：<span class="shouye_underline">配偶</span></span></td>
+						<td><span class="shouye_left">地址：<span class="shouye_underline">广东省广州市海珠区英城镇</span></span></td>
+						<td><span class="shouye_left">电话：<span class="shouye_underline">18872657162</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="4"><span class="shouye_left">入院途径：<span class="shouye_underline">2.门诊</span>(1.急诊 2.门诊 3.其他医疗机构转入 9.其他)</span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">入院日期：<span class="shouye_underline">2016年03月15日16时07分</span></span></td>
+						<td><span class="shouye_left">入院科别：<span class="shouye_underline">产科</span></span></td>
+						<td><span class="shouye_left">病房：<span class="shouye_underline">1房1床</span></span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">转科科别：<span class="shouye_underline">-年-月-日-时-</span></span></td>
+						<td><span class="shouye_left"><span class="shouye_underline">-年-月-日-时-</span></span></td>
+						<td><span class="shouye_left"><span class="shouye_underline">-年-月-日-时-</span></span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">出院日期：<span class="shouye_underline">2016年03月15日16时07分</span></span></td>
+						<td><span class="shouye_left">出院科别：<span class="shouye_underline">产科</span></span></td>
+						<td><span class="shouye_left">病房：<span class="shouye_underline">1房1床</span></span></td>
+						<td><span class="shouye_left">实际住院：<span class="shouye_underline">6</span>天</span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">门(急)诊诊断：<span class="shouye_underline">1.孕产宫内2.羊水过少</span></span></td>
+						<td><span class="shouye_left">疾病编码：<span class="shouye_underline">无</span></span></td>
+						<td><span class="shouye_left">门(急)诊医生：<span class="shouye_underline">许小英</span></span></td>
+					</tr>
+				</table>
+			</td></tr>
+			<tr><td>
+				<table class="sy_table1" border="0" cellspacing="0" cellpadding="0">
+					<tr><td colspan="2">出院诊断</td><td></td><td colspan="4">入院病情</td></tr>
+					<tr><td width="10%">类型</td><td width="40%">诊断名称</td><td width="20%">疾病编码</td><td width="5%">有</td><td width="10%">临床未确定</td><td width="10%">情况不明</td><td width="5%">无</td></tr>
+					
+					<tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr>
+					<tr>
+						<td><div dataname="date" datavalue=""><span>其它诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>羊水过少</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr>
+					<tr>
+						<td><div dataname="date" datavalue=""><span>其它诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>子宫平滑肌瘤</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+				</table>
+			</td></tr>
+			<tr><td>
+				<table class="sy_table2" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td colspan="4">
+						<span class="shouye_left">病例分型：<span class="shouye_underline">A.一般</span>(A.一般B.急C.疑难D.危重)</span>
+						<span class="shouye_left">临床路径病例：<span class="shouye_underline">2.否</span></span>
+						<span class="shouye_left">抢救：<span class="shouye_underline">-</span>次</span>
+						<span class="shouye_left">成功：<span class="shouye_underline">-</span>次</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><span class="shouye_left">损伤、中毒的外部原因：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">疾病编码：<span class="shouye_underline">无</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">病理诊断：<span class="shouye_underline">1.孕产宫内2.羊水过少</span></span></td>
+						<td><span class="shouye_left">病理号：<span class="shouye_underline">160271</span></span></td>
+						<td><span class="shouye_left">疾病编码：<span class="shouye_underline">无</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="3"><span class="shouye_left">药物过敏：<span class="shouye_underline">1.无</span>，过敏药物：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">死亡患者死检：<span class="shouye_underline">-</span></span></td>
+					</tr>
+					<tr>
+						<td colspan="2"><span class="shouye_left">血型：<span class="shouye_underline">3.O</span>(1.A 2.B 3.O 4.AB 5.不详 6.未查)</span></td>
+						<td colspan="2"><span class="shouye_left">Rh：<span class="shouye_underline">2.阳</span>(1.阴 2.阳 3.不详 4.未查)</span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">科主任：<span class="shouye_underline">丘医生</span></span></td>
+						<td><span class="shouye_left">主任(副主任)医师：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">主治医师：<span class="shouye_underline">徐小燕</span></span></td>
+						<td><span class="shouye_left">住院医师：<span class="shouye_underline">-</span></span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">责任护士：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">进修医师：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">实习医师：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">编码员：<span class="shouye_underline">-</span></span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">病案质量：<span class="shouye_underline">1.甲</span>(1.甲 2.乙 3.丙)</span></td>
+						<td><span class="shouye_left">质控医师：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">质控护士：<span class="shouye_underline">-</span></span></td>
+						<td><span class="shouye_left">日期：<span class="shouye_underline">2016年03月15日</span></span></td>
+					</tr>
+				</table>
+			</td></tr>
+			</table>
+        </div>
+		</form>
+    </div><!-- /.container -->
+	
+</body>
+ 
+<!-- Modal -->
+
+<!--数据存储的结构(对应后台表存储数据)-->
+<div id="datastorage" style="display:none">
+	<input acceptflag="true" type="hidden" id="rypgd_info" value='$rypgd_info' />
+</div>
+</html>

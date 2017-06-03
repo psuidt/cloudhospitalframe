@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <hostname value="开发调试中间件">
+  </hostname>
+  <cdkey value="rHnJPMunoNaygcHC6uWeUPxLxDMRqNQjcYoDEkCLNUiEmnwKytLIqQmy9qQ+fd3I">
+  </cdkey>
+  <debug value="1">
+  </debug>
+  <wcfservice value="1">
+  </wcfservice>
+  <router value="1">
+  </router>
+  <filetransfer value="0">
+  </filetransfer>
+  <webapi value="1">
+  </webapi>
+  <timingtask value="1">
+  </timingtask>
+  <heartbeat value="1">
+  </heartbeat>
+  <heartbeattime value="1">
+  </heartbeattime>
+  <message value="0">
+  </message>
+  <messagetime value="1">
+  </messagetime>
+  <compress value="0">
+  </compress>
+  <encryption value="0">
+  </encryption>
+  <token value="0">
+  </token>
+  <serializetype value="0">
+  </serializetype>
+  <overtime value="1">
+  </overtime>
+  <overtimetime value="1">
+  </overtimetime>
+</root>

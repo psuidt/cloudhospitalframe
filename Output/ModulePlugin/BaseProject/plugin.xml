@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib.CoreFrame" />
+  </configSections>
+  <unity>
+    <assembly name="HIS_PublicManage"></assembly>
+    <namespace name="HIS_PublicManage.Dao"></namespace>
+    <assembly name="HIS_BasicData"></assembly>
+    <namespace name="HIS_BasicData.Dao"></namespace>
+    <container>
+      <register type="IPublicManageDao" mapTo="SqlPublicManageDao"></register>
+      <register type="IDrugStoreInfoDao" mapTo="SqlDrugStoreInfoDao"></register>
+      <register type="IMemberInfoDao" mapTo="SqlMemberInfoDao"></register>
+      <register type="IBasicDataWorkerDao" mapTo="SqlBasicDataWorkerDao"></register>
+      <register type="IBasicDataChannelDao" mapTo="SqlBasicDataChannelDao"></register>
+      <register type="IBasicDataDeptDao" mapTo="SqlBasicDataDeptDao"></register>
+      <register type="IBasicDataEmpDao" mapTo="SqlBasicDataEmpDao"></register>
+      <register type="IBasicDataUserDao" mapTo="SqlBasicDataUserDao"></register>
+      <register type="IBasicDataWardDao" mapTo="SqlBasicDataWardDao"></register>
+      <register type="IBasicDataFeeItemDao" mapTo="SqlBasicDataFeeItemDao"></register>
+      <register type="IBasicDataExamItemDao" mapTo="SqlBasicDataExamItemDao"></register>
+      <register type="IBasicDataStatItemDao" mapTo="SqlBasicDataStatItemDao"></register>
+      <register type="IBasicDataParameterDao" mapTo="SqlBasicDataParameterDao"></register>
+      <register type="IBasicDataReportDao" mapTo="SqlBasicDataReportDao"></register>
+      <register type="IBasicDataPaymentDao" mapTo="SqlBasicDataPaymentDao"></register>
+      <register type="IBasicDataEntrustDao" mapTo="SqlBasicDataEntrustDao"></register>
+      <register type="IBasicAttachAdviceDao" mapTo="SqlBascAttachAdviceDao"></register>
+      <register type="IBasicFrequencyDao" mapTo="SqlBasicDataFrequencyDao"></register>
+      <register type="IBasicDataExceBillDao" mapTo="SqlBasicDataExecBillDao"></register>
+      <register type="IMsgTypeManageDao" mapTo="SqlMsgTypeManageDao"></register>
+    </container>
+  </unity>
+  <plugin name="BaseProject.Service" version="1.0" title="基础项目服务" author="zenghao" plugintype="Wcf" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="" />
+      <data key="updaterecord" value="" />
+      <data key="headpic" value="" />
+      <data key="StartItem" value="" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="HIS_Entity.dll" version="1.0" />
+      <dll name="HIS_PublicManage.dll" version="1.0" />
+      <dll name="HIS_BasicData.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+    </issue>
+    <setup>
+    </setup>
+    <menus>
+    </menus>
+  </plugin>
+</configuration>

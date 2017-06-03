@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+	<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="$path/component/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="$path/Temperature/template.css" rel="stylesheet">
+    
+    
+    <script src="$path/component/bootstrap-3.3.4-dist/js/jquery.min.js"></script>
+    <script src="$path/component/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="$path/component/bootstrap-3.3.4-dist/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="$path/component/jquery-easyui-1.4.1/themes/bootstrap/easyui.css">
+	<link rel="stylesheet" type="text/css" href="$path/component/jquery-easyui-1.4.1/themes/icon.css">
+	<script type="text/javascript" src="$path/component/jquery-easyui-1.4.1/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="$path/component/jquery-easyui-1.4.1/locale/easyui-lang-zh_CN.js"></script>
+	
+	<script type="text/javascript" src="$path/component/jquery.json-2.3.min.js"></script>
+	
+	<script type="text/javascript" src="$path/MRecordFirst/Page2.js"></script>
+    <style>
+		.container {
+		  width:756px;height:1086px;	  
+		}
+		.shouye_top{padding-top:50px; font-size:15px;}
+		.shouye_left{padding-left:5px;}
+		.shouye_underline
+		{
+			text-decoration:underline;
+			color:Blue;
+		}
+		.shouye_baseinfo{padding-left:5px; padding-right:5px;}
+		
+		.out_table{ width:100%}
+		.out_table table{}
+		.out_table td{}
+		
+		
+		.sy_table1{ width:100%;font-size:12px;text-align:center;}
+		.sy_table1 th{border:1px solid;text-align:center;}
+		.sy_table1 td{border:1px solid; padding-left:5px;}
+		.sy_table1 tr{ height:28px; }
+		
+		.sy_table2{ width:100%;font-size:12px;}
+		.sy_table2 tr{ height:28px; }
+		.sy_table2 td{border:1px solid;}
+		
+		.sy_table3{ width:100%;font-size:12px;text-align:left;}
+		.sy_table3 td{border:1px solid;}
+		.sy_table3 tr{ height:28px; }
+		
+		.sy_table4{ width:100%;font-size:12px;border-bottom: black 1px solid;border-left:1px solid;border-right:1px solid;}
+		.sy_table4 tr{ height:58px; }
+		
+		.sy_table{ width:100%;font-size:12px;}
+		.sy_table table{}
+		.sy_table tr{ height:28px; }
+		.sy_table td{border:0px solid;}
+		
+		
+		input{line-height:normal;border:0;border-bottom: black 1px solid;background:transparent;}
+		
+		@media print{
+			.noprint {DISPLAY: none;} 
+		    .wenshuprint {position:static;left:0;top:0;page-break-after: always;}
+	    }
+	</style>
+  </head>
+
+  <body>
+	<div class="container pageprint">
+		<div class="shouye_top">
+		  
+		</div>
+		<form id="sy_form" method="post">
+        <div class="shouye_baseinfo">
+			<table class="out_table" border="0" cellspacing="0" cellpadding="0">
+			<tr><td>
+				<table class="sy_table1" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+                    <tr>
+                      <th rowspan="2" style="width:80px">手术及操作编码</th>
+                      <th rowspan="2" style="width:80px">手术及操作日期</th>
+                      <th rowspan="2" >手术及操作名称</th>
+                      <th rowspan="2" style="width:50px">手术级别</th>
+                      <th colspan="3" style="width:150px">手术及操作医师</th>
+                      <th rowspan="2" style="width:50px">切口/愈合</th>
+                      <th rowspan="2" style="width:50px">择期手术</th>
+                      <th rowspan="2" style="width:100px">麻醉方式</th>
+                      <th rowspan="2" style="width:50px">麻醉医师</th>
+                    </tr>
+                    <tr>
+                      <th>术者</th>
+                      <th>Ⅰ助</th>
+                      <th>Ⅱ助</th>
+                    </tr>
+                  </thead>
+				  <tbody>
+					<tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr>
+					<tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr><tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr><tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr><tr>
+						<td><div dataname="date" datavalue=""><span>主要诊断</span></div></td>
+						<td><div dataname="date" datavalue=""><span>孕产宫内2</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span>√</span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+						<td><div dataname="date" datavalue=""><span></span></div></td>
+					</tr>
+				</tbody>
+				</table>
+			</td></tr>
+			<tr><td>
+				<table class="sy_table2" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+						<span class="shouye_left">离院方式：<span class="shouye_underline">1.医嘱离院</span>(1.医嘱离院 2.医嘱转院，拟接收医疗机构名称：<span class="shouye_underline">-</span> 3.医嘱转社区卫生服务机构/乡镇卫生院，拟接收医疗机构名称：<span class="shouye_underline">-</span> 4.非医嘱离院 5.死亡 9.其他)</span>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">是否有出院31天内再住院计划：<span class="shouye_underline">1.无</span>(1.无 2.有) 目的：<span class="shouye_underline" style="width:200px;">-</span></span></td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">颅内损伤患者昏迷时间：入院前<span class="shouye_underline">/</span>天<span class="shouye_underline">/</span>小时<span class="shouye_underline">/</span>分钟  入院后<span class="shouye_underline">/</span>天<span class="shouye_underline">/</span>小时<span class="shouye_underline">/</span>分钟</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">住院费用总计(元)：<span class="shouye_underline">5725.89</span>(自付金额<span class="shouye_underline">5725.89</span>)</span></td>
+					</tr>
+				</table>
+			</td></tr>
+			<tr><td>
+				<table class="sy_table3" border="0" cellspacing="0" cellpadding="0">
+					
+					<tr>
+						<td style="width:150px" ><span class="shouye_left">1.综合医疗服务类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(1)一般医疗服务费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(2)一般治疗操作费：<span class="shouye_underline">5725.89</span></span></td></tr>
+								<tr><td><span class="shouye_left">(3)护理费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(4)其它费用：<span class="shouye_underline">5725.89</span></span></td></tr>
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td><span class="shouye_left">2.诊断类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(5)病理诊断费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(6)实验室诊断费：<span class="shouye_underline">5725.89</span></span></td></tr>
+								<tr><td><span class="shouye_left">(7)影像学诊断费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(8)临床诊断项目费：<span class="shouye_underline">5725.89</span></span></td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">3.治疗类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(9)非手术治疗项目费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(临床物理治疗费：<span class="shouye_underline">5725.89</span>）</span></td></tr>
+								<tr><td><span class="shouye_left">(10)手术治疗费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(麻醉费：<span class="shouye_underline">5725.89</span>)(手术费：<span class="shouye_underline">5725.89</span>)</span></td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">4.康复类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="2"><span class="shouye_left">(11)康复费：<span class="shouye_underline">5725.89</span></span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">5.中医类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td colspan="2"><span class="shouye_left">(12)中医治疗费：<span class="shouye_underline">5725.89</span></span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">6.西药类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(13)西药费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(抗菌药物费用：<span class="shouye_underline">5725.89</span>)</span></td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">7.中药类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(14)中成药费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(15)中草药费：<span class="shouye_underline">5725.89</span></span></td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">8.血液和血液制品类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="30%"><span class="shouye_left">(16)血费：<span class="shouye_underline">5725.89</span></span></td>
+								<td style="35%"><span class="shouye_left">(17)白蛋白类制品费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(18)球蛋白类制品费：<span class="shouye_underline">5725.89</span></span></td>
+								</tr>
+								<tr><td colspan="2"><span class="shouye_left">(19)凝血因子类制品费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(20)细胞因子类制品费：<span class="shouye_underline">5725.89</span></span></td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">9.耗材类</span></td>
+						<td>
+							<table class="sy_table" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+								<td style="50%"><span class="shouye_left">(21)检查用一次性医用材料费：<span class="shouye_underline">5725.89</span></span></td>
+								<td><span class="shouye_left">(22)治疗用一次性医用材料费：<span class="shouye_underline">5725.89</span></span></td></tr>
+								<tr><td colspan="2"><span class="shouye_left">(23)手术用一次性医用材料费：<span class="shouye_underline">5725.89</span></span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="shouye_left">10.其它类</span></td>
+						<td><span class="shouye_left">(24)其它费：<span class="shouye_underline">5725.89</span></span></td>
+					</tr>
+				</table>
+			</td></tr>
+			<tr><td>
+				<table class="sy_table4" border="0" cellspacing="0" cellpadding="0">
+					<tr><td>
+					说明：
+					</br>
+					（一）医疗付费方式 1.城镇职工基本医疗保险 2.城镇居民基本医疗保险 3.新型农村合作医疗 4.贫困救助 5.商业医疗保险 6.全公费 7.全自费 8.其他社会保险 9.其它 
+					</br>
+					（二）凡可由医院信息系统提供住院费用清单的，住院病案首页中可不填写“住院费用”，但必须按首页的费用分类提供电子数据。
+					</td></tr>
+				</table>
+			</td></tr>
+			</table>
+        </div>
+		</form>
+    </div><!-- /.container -->
+	
+  </body>
+ 
+<!-- Modal -->
+
+<!--数据存储的结构(对应后台表存储数据)-->
+<div id="datastorage" style="display:none">
+	<input acceptflag="true" type="hidden" id="rypgd_info" value='$rypgd_info' />
+</div>
+</html>

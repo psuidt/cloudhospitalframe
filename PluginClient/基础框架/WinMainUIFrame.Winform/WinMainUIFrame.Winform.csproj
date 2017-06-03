@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinMainUIFrame.Winform</RootNamespace>
+    <AssemblyName>WinMainUIFrame.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WcfFrame</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WcfFrame</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\Component\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EFWCoreLib.CoreFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.CoreFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WcfFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WcfFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFWCoreLib.WinformFrame">
+      <HintPath>..\..\..\Component\EFWCoreLib.WinformFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\..\..\Component\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Component\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinMainUIFrame">
+      <HintPath>..\..\..\Output\WinMainUIFrame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CustomConfigManager.cs" />
+    <Compile Include="Controller\ReportConfigureController.cs" />
+    <Compile Include="Controller\wcfclientEmpUserController.cs" />
+    <Compile Include="Controller\wcfclientLoginController.cs" />
+    <Compile Include="Controller\wcfclientRightController.cs" />
+    <Compile Include="IView\EmpUserManager\IfrmAddUser.cs" />
+    <Compile Include="IView\EmpUserManager\IfrmDeptEmp.cs" />
+    <Compile Include="IView\EmpUserManager\IfrmWorker.cs" />
+    <Compile Include="IView\IfrmLogin.cs" />
+    <Compile Include="IView\IfrmMain.cs" />
+    <Compile Include="IView\IfrmPassWord.cs" />
+    <Compile Include="IView\IFrmReportConfigure.cs" />
+    <Compile Include="IView\IFrmReportDesigner.cs" />
+    <Compile Include="IView\IfrmReSetDept.cs" />
+    <Compile Include="IView\IfrmSetting.cs" />
+    <Compile Include="IView\IfrmUnitData.cs" />
+    <Compile Include="IView\RightManager\IfrmAddGroup.cs" />
+    <Compile Include="IView\RightManager\IfrmAddmodule.cs" />
+    <Compile Include="IView\RightManager\IfrmGroupMenu.cs" />
+    <Compile Include="IView\RightManager\IfrmMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\FrmDeptEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\FrmDeptEmp.Designer.cs">
+      <DependentUpon>FrmDeptEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\frmWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\EmpUserManager\frmWorker.Designer.cs">
+      <DependentUpon>frmWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmMainRibbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmMainRibbon.Designer.cs">
+      <DependentUpon>FrmMainRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmPassWord.Designer.cs">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmReportConfigure.Designer.cs">
+      <DependentUpon>FrmReportConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\FrmWeclome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\FrmWeclome.Designer.cs">
+      <DependentUpon>FrmWeclome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\Messages.cs" />
+    <Compile Include="ViewForm\MessageTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageTimer.Designer.cs">
+      <DependentUpon>MessageTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ReDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\ReDept.Designer.cs">
+      <DependentUpon>ReDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmAddGroup.Designer.cs">
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmAddModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmAddModule.Designer.cs">
+      <DependentUpon>frmAddModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmGroupMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmGroupMenu.Designer.cs">
+      <DependentUpon>frmGroupMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\RightManager\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\TaskbarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\TaskbarForm.Designer.cs">
+      <DependentUpon>TaskbarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\WebBrowser\FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\WebBrowser\FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\WebBrowser\IfrmWebBrowserView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\EmpUserManager\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\EmpUserManager\FrmDeptEmp.resx">
+      <DependentUpon>FrmDeptEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\EmpUserManager\frmWorker.resx">
+      <DependentUpon>frmWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmMainRibbon.resx">
+      <DependentUpon>FrmMainRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmPassWord.resx">
+      <DependentUpon>FrmPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmReportConfigure.resx">
+      <DependentUpon>FrmReportConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\FrmWeclome.resx">
+      <DependentUpon>FrmWeclome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\ReDept.resx">
+      <DependentUpon>ReDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\RightManager\frmAddGroup.resx">
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\RightManager\frmAddModule.resx">
+      <DependentUpon>frmAddModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\RightManager\frmGroupMenu.resx">
+      <DependentUpon>frmGroupMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\RightManager\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\TaskbarForm.resx">
+      <DependentUpon>TaskbarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\WebBrowser\FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EfwControls\EfwControls.csproj">
+      <Project>{a7618987-492b-4d5d-92c2-0381ec45817f}</Project>
+      <Name>EfwControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>MD $(SolutionDir)Output_Client\ModulePlugin\WcfMainUIFrame\dll
+Copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Output_Client\ModulePlugin\WcfMainUIFrame\dll\"
+Copy "$(TargetDir)WinMainUIFrame.dll" "$(SolutionDir)Output_Client\ModulePlugin\WcfMainUIFrame\dll\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

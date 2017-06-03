@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib.CoreFrame" />
+  </configSections>
+  <unity> 
+    <container>
+    </container>
+  </unity>
+  <plugin name="BaseProject.UI" version="1.0" title="基础项目插件模块" author="zenghao" plugintype="Winform" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="" />
+      <data key="updaterecord" value="" />
+      <data key="headpic" value="" />
+      <data key="StartItem" value="" />
+      <data key="ssss" value="" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="HIS_BasicData.Winform.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+    </issue>
+    <setup>
+    </setup>
+    <menus>
+    </menus>
+  </plugin>
+</configuration>

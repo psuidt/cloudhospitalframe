@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <SqlServerToCS>
+    <Item key="varbinary" value="Byte[]" IsSingleQuote="true"></Item>
+    <Item key="varchar" value="string" IsSingleQuote="true"></Item>
+    <Item key="nvarchar" value="string" IsSingleQuote="true"></Item>
+    <Item key="nchar" value="string" IsSingleQuote="true"></Item>
+    <Item key="char" value="string" IsSingleQuote="true"></Item>
+    <Item key="smalldatetime" value="DateTime" IsSingleQuote="true"></Item>
+    <Item key="datetime" value="DateTime" IsSingleQuote="true"></Item>
+    <Item key="ntext" value="string" IsSingleQuote="true"></Item>
+    <Item key="text" value="string" IsSingleQuote="true"></Item>
+    <Item key="bigint" value="long" IsSingleQuote="false"></Item>
+    <Item key="binary" value="Byte[]" IsSingleQuote="true"></Item>
+    <Item key="bit" value="bool" IsSingleQuote="true"></Item>
+    <Item key="decimal" value="Decimal" IsSingleQuote="false"></Item>
+    <Item key="float" value="Double" IsSingleQuote="false"></Item>
+    <Item key="image" value="Byte[]" IsSingleQuote="true"></Item>
+    <Item key="tinyint" value="int" IsSingleQuote="false"></Item>
+    <Item key="smallint" value="int" IsSingleQuote="false"></Item>
+    <Item key="int" value="int" IsSingleQuote="false"></Item>
+    <Item key="money" value="Decimal" IsSingleQuote="false"></Item>
+    <Item key="real" value="string" IsSingleQuote="true"></Item>
+    <Item key="smallmoney" value="Decimal" IsSingleQuote="false"></Item>
+    <Item key="sql_variant" value="Object" IsSingleQuote="true"></Item>
+    <Item key="timestamp" value="Byte[]" IsSingleQuote="true"></Item>
+    <Item key="uniqueidentifier" value="string" IsSingleQuote="true"></Item>
+  </SqlServerToCS>
+  <OracleToCS>
+    
+  </OracleToCS>
+  <DB2ToCS>
+    
+  </DB2ToCS>
+</root>
